@@ -82,3 +82,19 @@ exports.deleteList = async (req, res) => {
         return sendResponse(res, 'Failed to delete list', 500, { error: error.message });
     }
 };
+
+// Get all Lists by project id
+exports.getListByProjectId = async (req, res) => {
+    const id = req.params.id;
+    console.log(id);
+    
+    try {
+        const lists = await List.find({ projectId: id }).select("_id name");
+        
+        logger.info('Lists fetched successfully');
+        return sendResponse(res, 'Lists fetched successfully', 200, lists);
+    } catch (error) {
+        logger.error(`Error fetching lists: ${error.message}`);
+        return sendResponse(res, 'Failed to fetch lists', 500, { error: error.message });
+    }
+};

@@ -13,16 +13,19 @@ exports.createNotification = async (req, res) => {
         await notification.save();
 
         // Tạo danh sách người nhận
-        const recipients = notificationRecipients.map(userId => ({
+        const recipients = notificationRecipients
+        .filter(userId => userId !== senderId) // Lọc bỏ senderId nếu cần
+        .map(userId => ({
             notificationId: notification._id,
-            userId
+            userId: userId, // Đúng cú pháp
         }));
-       const insertedRecipients  = await NotificationRecipient.insertMany(recipients);
-       const notificationRecipientIds = insertedRecipients.map(recipient => recipient._id);
+
+        const insertedRecipients = await NotificationRecipient.insertMany(recipients);
+        const notificationRecipientIds = insertedRecipients.map(recipient => recipient._id);
 
         // Cập nhật danh sách người nhận vào notification
         notification.notificationRecipients = notificationRecipientIds;
-       await notification.save();
+        await notification.save();
         return sendResponse(res, "create notification successfully", 201, { notification, recipients });
     } catch (error) {
         logger.error(`Error creating notification: ${error.message}`, { error });
@@ -110,5 +113,55 @@ exports.deleteNotification = async (req, res) => {
     } catch (error) {
         logger.error(`Error deleting notification: ${error.message}`, { error });
         sendError(res, 'Error deleting notification', 400, error.message);
+    }
+};
+
+
+// Get a single notification by ID
+exports.getNotificationByUserId = async (req, res) => {
+    const id = req.params.id;
+    try {
+        // Tìm tất cả notificationId mà userId đã nhận
+        const notificationRecipients = await NotificationRecipient.find({ userId: id })
+            .select('notificationId');
+
+        if (!notificationRecipients.length) {
+            return sendResponse(res, "No notifications found for this user", 200, []);
+        }
+
+        const notificationIds = notificationRecipients.map(nr => nr.notificationId);
+
+        // Lấy thông tin chi tiết của thông báo dựa trên danh sách notificationId
+        const notifications = await Notification.find({ _id: { $in: notificationIds } })
+            .populate('notificationRecipients') // Load thông tin recipients nếu cần
+            .sort({ createdAt: -1 })
+            .exec();
+            
+        return sendResponse(res, "Get notifications by userId successfully", 200, notifications);
+    } catch (error) {
+        logger.error(`Error fetching notifications: ${error.message}`, { error });
+    }
+};
+
+// Update a notification recipient by ID and userId
+exports.updateNotificationByUserId = async (req, res) => {
+    try {
+        const { notificationRecipientId, userId } = req.params;
+
+        // Cập nhật trạng thái đọc của người nhận (notificationRecipient)
+        const notificationRecipient = await NotificationRecipient.findOneAndUpdate(
+            { _id: notificationRecipientId, userId: userId }, // Tìm theo id và userId
+            { isRead: true }, // Cập nhật isRead = true
+            { new: true } // Trả về dữ liệu mới sau cập nhật
+        );
+
+        if (!notificationRecipient) {
+            return sendError(res, 'Notification recipient not found', 404);
+        }
+
+        return sendResponse(res, "Update notification successfully", 200, notificationRecipient);
+    } catch (error) {
+        logger.error(`Error updating notification: ${error.message}`, { error });
+        sendError(res, 'Error updating notification', 400, error.message);
     }
 };

@@ -135,3 +135,35 @@ Use mongoose.model(name, schema)
 2025-01-22 11:16:20 [ERROR]: Get project by ID error: Cast to ObjectId failed for value "asd á dá da sd á dá a s á dá da sasdas dádasdasdasd á dá đá asd á a s dá dá a sdas d" (type string) at path "_id" for model "Project"
 2025-01-22 11:16:25 [ERROR]: Get project by ID error: Cast to ObjectId failed for value "asd á dá da sd á dá a s á dá da sasdas dádasdasdasd á dá đá asd á a s dá dá a sdas d" (type string) at path "_id" for model "Project"
 2025-01-22 11:16:25 [ERROR]: Get project by ID error: Cast to ObjectId failed for value "asd á dá da sd á dá a s á dá da sasdas dádasdasdasd á dá đá asd á a s dá dá a sdas d" (type string) at path "_id" for model "Project"
+2025-02-04 17:30:52 [ERROR]: Get project by ID error: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Project"
+2025-02-04 17:50:53 [ERROR]: Get project by ID error: Cannot read properties of null (reading '_id')
+2025-02-04 18:58:51 [ERROR]: Error creating task: project is not defined
+2025-02-04 18:59:11 [ERROR]: Error creating task: project is not defined
+2025-02-04 18:59:27 [ERROR]: Error creating task: Task validation failed: _id: Cast to ObjectId failed for value "Promise { <pending> }" (type Promise) at path "_id" because of "BSONError"
+2025-02-04 19:00:05 [ERROR]: Error creating task: Task validation failed: _id: Cast to ObjectId failed for value "TL001" (type string) at path "_id" because of "BSONError"
+2025-02-05 08:56:10 [ERROR]: Error moving task: Task validation failed: identifier: Path `identifier` is required.
+2025-02-05 08:56:17 [ERROR]: Error moving task: Task validation failed: identifier: Path `identifier` is required.
+2025-02-05 08:56:25 [ERROR]: Error moving task: Task validation failed: identifier: Path `identifier` is required.
+2025-02-05 08:56:31 [ERROR]: Error moving task: Task validation failed: identifier: Path `identifier` is required.
+2025-02-05 09:04:09 [ERROR]: Error moving task: Task validation failed: identifier: Path `identifier` is required.
+2025-02-05 09:26:56 [ERROR]: Error fetching task by ID: Cast to ObjectId failed for value "TL002" (type string) at path "_id" for model "Task"
+2025-02-05 09:27:13 [ERROR]: Error fetching task by ID: Cast to ObjectId failed for value "TL002" (type string) at path "_id" for model "Task"
+2025-02-05 09:28:29 [ERROR]: Error fetching task by ID: Cast to ObjectId failed for value "TL002" (type string) at path "_id" for model "Task"
+2025-02-05 09:28:55 [ERROR]: Error fetching task by ID: Cast to ObjectId failed for value "TL002" (type string) at path "_id" for model "Task"
+2025-02-09 15:05:35 [ERROR]: Error moving task: Task validation failed: identifier: Path `identifier` is required.
+2025-02-09 15:05:46 [ERROR]: Error moving task: Task validation failed: identifier: Path `identifier` is required.
+2025-02-09 15:06:43 [ERROR]: Error moving task: Task validation failed: identifier: Path `identifier` is required.
+2025-02-09 15:07:17 [ERROR]: Error moving task: Task validation failed: identifier: Path `identifier` is required.
+2025-02-09 15:18:12 [ERROR]: Error retrieving members by project ID: read ECONNRESET
+2025-02-09 15:18:12 [ERROR]: Error retrieving members by project ID: read ECONNRESET
+2025-02-09 15:32:37 [ERROR]: Error moving task: Task validation failed: identifier: Path `identifier` is required.
+2025-02-09 15:33:27 [ERROR]: Error moving task: Task validation failed: identifier: Path `identifier` is required.
+2025-02-09 15:33:42 [ERROR]: Error moving task: Task validation failed: identifier: Path `identifier` is required.
+2025-02-09 15:33:47 [ERROR]: Error moving task: Task validation failed: identifier: Path `identifier` is required.
+2025-02-09 15:34:05 [ERROR]: Error moving task: Task validation failed: identifier: Path `identifier` is required.
+2025-02-09 20:39:29 [ERROR]: Error fetching notifications: userId is not defined
+2025-02-09 20:40:08 [ERROR]: Error fetching notifications: userId is not defined
+2025-02-10 17:40:11 [ERROR]: Get project by ID error: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Project"
+2025-02-10 17:40:11 [ERROR]: Error retrieving tasks by project ID: Cast to ObjectId failed for value "undefined" (type string) at path "projectId" for model "List"
+2025-02-10 17:40:11 [ERROR]: Error retrieving members by project ID: Cast to ObjectId failed for value "undefined" (type string) at path "projectId" for model "Member"
+2025-02-10 23:08:34 [ERROR]: Error fetching notifications: Notification.find(...).populate(...).exec(...).sort is not a function

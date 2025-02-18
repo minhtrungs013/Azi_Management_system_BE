@@ -8,6 +8,10 @@
 
 # production
 /build
+/logs/error.log
+/logs/exceptions.log
+/logs/info.log
+/logs/warning.log
 
 # misc
 .DS_Store

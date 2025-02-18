@@ -1,7 +1,33 @@
 const Task = require('../models/Task');
+const Project = require('../models/projectModel');
 const List = require('../models/ListModel');
 const sendResponse = require('../helpers/responseHelper');
 const logger = require('../config/logger/logger');
+
+
+const generateTaskIdentifier = async (projectId) => {
+    const project = await Project.findById(projectId);
+    if (!project) {
+        throw new Error("Project not found");
+    }
+
+    
+    const projectName = project.name.split(' ').map(word => word.charAt(0).toUpperCase()).join('');
+    
+    const lastTask = await Task.findOne({ identifier: { $regex: `^${projectName}` } })
+                               .sort({ createdAt: -1 });  // Lấy task mới nhất
+
+    let newCount = 1;
+    if (lastTask) {
+        const lastIdentifier = lastTask.identifier;
+        const lastNumber = parseInt(lastIdentifier.slice(projectName.length));
+        newCount = lastNumber + 1;
+    }
+
+    const identifier = `${projectName}${String(newCount).padStart(4, '0')}`;
+   
+    return identifier;
+};
 
 // Create Task
 exports.createTask = async (req, res) => {
@@ -9,11 +35,15 @@ exports.createTask = async (req, res) => {
         const { title, description, assignee, issueType, image_urls, listId, position, priority, reporter } = req.body;
         // Kiểm tra xem listId có hợp lệ không
         const list = await List.findById(listId);
+        const identifier = await generateTaskIdentifier(list.projectId);
+       
         if (!list) {
             logger.info('List not found');
             return sendResponse(res, 'List not found', 404);
         }
+      
         const newTask = new Task({
+            identifier: identifier,
             title,
             description,
             assignee,
@@ -53,7 +83,9 @@ exports.getTasks = async (req, res) => {
 // Get Task by ID
 exports.getTaskById = async (req, res) => {
     try {
-        const task = await Task.findById(req.params.id);
+        const task = await Task.findOne({ identifier: req.params.id })
+        .populate('assignee', 'name email avatar_url firstname lastname')
+        .populate('reporter', 'name email avatar_url firstname lastname')
         if (!task) {
             logger.info('Task not found');
             return sendResponse(res, 'Task not found', 404);
@@ -69,8 +101,6 @@ exports.getTaskById = async (req, res) => {
 // Update Task
 exports.updateTask = async (req, res) => {
     try {
-        console.log("req.body", req.body);
-        
         const updatedTask = await Task.findByIdAndUpdate(req.params.id, req.body, { new: true });
         if (!updatedTask) {
             logger.info('Task not found for update');
@@ -141,31 +171,54 @@ exports.moveTask = async (req, res) => {
 exports.getTasksByProjectId = async (req, res) => {
     try {
         const { projectId } = req.params;
+        const { page = 1, searchParams, status, reporter, assignee } = req.query;
+        const limit = 10;
+        const skip = (parseInt(page) - 1) * limit;
 
-        // Lấy danh sách các list thuộc projectId
-        const lists = await List.find({ projectId }).select('_id name position');
-
-        if (!lists || lists.length === 0) {
+        // Lấy danh sách list thuộc project
+        const lists = await List.find({ projectId }).select('_id name');
+        if (!lists.length) {
             logger.info('No lists found for the given project ID');
             return sendResponse(res, 'No lists found for the given project ID', 404);
         }
 
-        // Lấy tất cả các task từ các listId thuộc projectId
-        const listIds = lists.map(list => list._id);
-        const tasks = await Task.find({ listId: { $in: listIds } })
-            .populate('assignee', 'name email avatar_url firstname lastname') // Populate thông tin người được giao
-            .populate('reporter', 'name email avatar_url firstname lastname') // Populate thông tin người báo cáo
-            .populate('listId','name') // Populate 
-            .sort({ createdAt: -1 }) // Sắp xếp theo vị trí trong list
-            .exec();
+        // Lọc listId theo status nếu có
+        let listIds = lists.map(list => list._id);
+        if (status && status !== "All") {
+            const statusList = lists.find(list => list.name.toUpperCase() === status.toUpperCase());
+            listIds = statusList ? [statusList._id] : [];
+        }
 
-        if (!tasks || tasks.length === 0) {
+        // Tạo bộ lọc
+        const filter = { listId: { $in: listIds } };
+        Object.assign(filter, assignee && { assignee }, reporter && { reporter });
+        if (searchParams) {
+            filter.$or = [
+                { title: new RegExp(searchParams, "i") },
+                { description: new RegExp(searchParams, "i") }
+            ];
+        }
+
+        // Lấy task và đếm tổng số lượng trong một lần truy vấn
+        const [tasks, totalTasks] = await Promise.all([
+            Task.find(filter)
+                .populate('assignee', 'name email avatar_url firstname lastname')
+                .populate('reporter', 'name email avatar_url firstname lastname')
+                .populate('listId', 'name')
+                .sort({ createdAt: -1 })
+                .skip(skip)
+                .limit(limit),
+            Task.countDocuments(filter)
+        ]);
+
+        if (!tasks.length) {
             logger.info('No tasks found for the given project ID');
             return sendResponse(res, 'No tasks found for the given project ID', 404);
         }
 
         logger.info(`Found ${tasks.length} tasks for project ID: ${projectId}`);
-        return sendResponse(res, 'Tasks retrieved successfully', 200, tasks);
+        return sendResponse(res, 'Tasks retrieved successfully', 200, { tasks, totalPages: Math.ceil(totalTasks / limit) });
+
     } catch (error) {
         logger.error(`Error retrieving tasks by project ID: ${error.message}`);
         return sendResponse(res, 'Failed to retrieve tasks', 500, { error: error.message });

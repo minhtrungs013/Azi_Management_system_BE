@@ -928,3 +928,111 @@ Error: Route.get() requires a callback function but got a [object Undefined]
     at Module.require (node:internal/modules/cjs/loader:1235:19)
     at require (node:internal/modules/helpers:176:18)
     at Object.<anonymous> (D:\pratice\node-server\routes\index.js:10:20)
+2025-02-05 23:06:46 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::5000
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Object.<anonymous> (D:\pratice\Azi_Management_system_BE\index.js:69:8)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+2025-02-05 23:07:35 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::5000
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Object.<anonymous> (D:\pratice\Azi_Management_system_BE\index.js:69:8)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+2025-02-09 13:37:39 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::5000
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Object.<anonymous> (D:\pratice\Azi_Management_system_BE\index.js:69:8)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+2025-02-09 13:38:51 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::5000
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Object.<anonymous> (D:\pratice\Azi_Management_system_BE\index.js:69:8)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+2025-02-09 13:45:51 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::5000
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Object.<anonymous> (D:\pratice\Azi_Management_system_BE\index.js:69:8)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+2025-02-09 20:39:29 [ERROR]: uncaughtException: sendError is not defined
+ReferenceError: sendError is not defined
+    at exports.getNotificationByUserId (D:\pratice\Azi_Management_system_BE\controllers\notificationController.js:140:9)
+    at Layer.handle [as handle_request] (D:\pratice\Azi_Management_system_BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\pratice\Azi_Management_system_BE\node_modules\express\lib\router\route.js:149:13)
+    at D:\pratice\Azi_Management_system_BE\middlewares\authMiddleware.js:15:9
+    at D:\pratice\Azi_Management_system_BE\node_modules\jsonwebtoken\verify.js:261:12
+    at getSecret (D:\pratice\Azi_Management_system_BE\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (D:\pratice\Azi_Management_system_BE\node_modules\jsonwebtoken\verify.js:101:10)
+    at authenticateToken (D:\pratice\Azi_Management_system_BE\middlewares\authMiddleware.js:10:9)
+    at Layer.handle [as handle_request] (D:\pratice\Azi_Management_system_BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\pratice\Azi_Management_system_BE\node_modules\express\lib\router\route.js:149:13)
+2025-02-09 21:47:37 [ERROR]: uncaughtException: Route.put() requires a callback function but got a [object Undefined]
+Error: Route.put() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as put] (D:\pratice\Azi_Management_system_BE\node_modules\express\lib\router\route.js:216:15)
+    at proto.<computed> [as put] (D:\pratice\Azi_Management_system_BE\node_modules\express\lib\router\index.js:521:19)
+    at Object.<anonymous> (D:\pratice\Azi_Management_system_BE\routes\notificationRoutes.js:20:8)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\pratice\Azi_Management_system_BE\routes\index.js:12:28)
+2025-02-09 21:50:24 [ERROR]: uncaughtException: Route.put() requires a callback function but got a [object Undefined]
+Error: Route.put() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as put] (D:\pratice\Azi_Management_system_BE\node_modules\express\lib\router\route.js:216:15)
+    at proto.<computed> [as put] (D:\pratice\Azi_Management_system_BE\node_modules\express\lib\router\index.js:521:19)
+    at Object.<anonymous> (D:\pratice\Azi_Management_system_BE\routes\notificationRoutes.js:20:8)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\pratice\Azi_Management_system_BE\routes\index.js:12:28)
+2025-02-09 21:55:16 [ERROR]: uncaughtException: Route.put() requires a callback function but got a [object Undefined]
+Error: Route.put() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as put] (D:\pratice\Azi_Management_system_BE\node_modules\express\lib\router\route.js:216:15)
+    at proto.<computed> [as put] (D:\pratice\Azi_Management_system_BE\node_modules\express\lib\router\index.js:521:19)
+    at Object.<anonymous> (D:\pratice\Azi_Management_system_BE\routes\notificationRoutes.js:20:8)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\pratice\Azi_Management_system_BE\routes\index.js:12:28)

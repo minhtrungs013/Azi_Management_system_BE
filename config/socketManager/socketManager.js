@@ -26,7 +26,7 @@ const socketManager = (io) => {
 
         socket.on('sendNotification', ({ group, message }) => {
             const newMessage = { group, message };
-            io.to(group).emit('sendNotification', newMessage);
+            io.to(group).except(socket.id).emit('sendNotification', newMessage);
         });
 
         socket.on('disconnect', () => {

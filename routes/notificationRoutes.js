@@ -11,8 +11,13 @@ router.get('/', authenticateToken, notificationController.getNotifications);
 // Get a single notification by ID
 router.get('/:id', authenticateToken, notificationController.getNotificationById);
 
+router.get('/user/:id', authenticateToken, notificationController.getNotificationByUserId);
+
 // Update a notification by ID
 router.put('/:id', authenticateToken, notificationController.updateNotification);
+
+// Update a notification recipient by ID
+router.put('/notificationRecipient/:notificationRecipientId/:userId', authenticateToken, notificationController.updateNotificationByUserId);
 
 // Delete a notification by ID
 router.delete('/:id', authenticateToken, notificationController.deleteNotification);

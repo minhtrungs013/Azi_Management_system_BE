@@ -8,6 +8,9 @@ router.post('/', listController.createList);
 // Get all Lists
 router.get('/', listController.getLists);
 
+// Get  Lists By Project ID
+router.get('/projectId/:id', listController.getListByProjectId);
+
 // Get List by ID
 router.get('/:id', listController.getListById);
 
