@@ -1,9 +1,10 @@
+const { log } = require('winston');
 const { getProjectIds } = require('../../controllers/projectController'); // Điều chỉnh đường dẫn đúng
-
 const socketManager = (io) => {
+    const users = {}; // { username: socketId }
     io.on('connection', (socket) => {
         console.log(`User connected: ${socket.id}`);
-
+      
         socket.on('joinGroupChat', ({ group }) => {
             socket.join(group);
             console.log(`User joined group: ${group}`);
@@ -27,6 +28,67 @@ const socketManager = (io) => {
         socket.on('sendNotification', ({ group, message }) => {
             const newMessage = { group, message };
             io.to(group).except(socket.id).emit('sendNotification', newMessage);
+        });
+
+        socket.on('register', (username) => {
+            users[username] = socket.id;
+            console.log(`User registered: ${username} (${socket.id})`);
+            console.log(users);
+            
+        });
+
+        socket.on('callUser', ({ to, signalData, from, name }) => {
+            const targetSocketId = users[to];
+            
+            console.log(`Call from ${from} to ${to}: ${targetSocketId}`);
+            
+            if (targetSocketId) {
+                io.to(targetSocketId).emit('callIncoming', {
+                    from: name,
+                    name,
+                    signal: signalData,
+                });
+                console.log(`User ${from} is calling ${to}`);
+            }
+        });
+
+        socket.on('answerCall', ({ to, signal }) => {
+            const targetSocketId = users[to];
+            console.log(targetSocketId);
+            
+            if (targetSocketId) {
+                io.to(targetSocketId).emit('callAccepted', {
+                    signal,
+                });
+                console.log(`Call answered by ${socket.id} to ${to}`);
+            }
+        });
+
+        socket.on('ice-candidate', ({ to, candidate }) => {
+            let targetSocketId = users[to];
+            
+            if (targetSocketId) {
+                io.to(targetSocketId).emit('ice-candidate', {
+                    candidate,
+                });
+            }
+        });
+        socket.on('tesst', ({ to, candidate }) => {
+            let targetSocketId = users[to];
+            console.log(to);
+            
+            if (targetSocketId) {
+                io.to(targetSocketId).emit('ice-candidate', {
+                    candidate,
+                });
+            }
+        });
+
+        socket.on('endCall', ({ to }) => {
+            const targetSocketId = users[to];
+            if (targetSocketId) {
+                io.to(targetSocketId).emit('callEnded');
+            }
         });
 
         socket.on('disconnect', () => {

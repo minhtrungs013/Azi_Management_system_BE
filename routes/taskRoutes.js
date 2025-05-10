@@ -6,6 +6,8 @@ router.post('/', taskController.createTask);
 router.get('/', taskController.getTasks);
 router.get('/:id', taskController.getTaskById);
 router.get('/project/:projectId', taskController.getTasksByProjectId);
+router.get('/current-sprint/:projectId', taskController.getTasksByCurrentSprint);
+router.get('/backlog/:projectId', taskController.getTasksOnBacklog);
 router.put('/:id', taskController.updateTask);
 router.put('/:taskId/lists/:targetListId', taskController.moveTask);
 router.delete('/:id', taskController.deleteTask);

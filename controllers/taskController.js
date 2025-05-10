@@ -1,5 +1,6 @@
 const Task = require('../models/Task');
 const Project = require('../models/projectModel');
+const Sprint = require('../models/SprintModel');
 const List = require('../models/ListModel');
 const sendResponse = require('../helpers/responseHelper');
 const logger = require('../config/logger/logger');
@@ -11,11 +12,11 @@ const generateTaskIdentifier = async (projectId) => {
         throw new Error("Project not found");
     }
 
-    
+
     const projectName = project.name.split(' ').map(word => word.charAt(0).toUpperCase()).join('');
-    
+
     const lastTask = await Task.findOne({ identifier: { $regex: `^${projectName}` } })
-                               .sort({ createdAt: -1 });  // Lấy task mới nhất
+        .sort({ createdAt: -1 });  // Lấy task mới nhất
 
     let newCount = 1;
     if (lastTask) {
@@ -25,23 +26,48 @@ const generateTaskIdentifier = async (projectId) => {
     }
 
     const identifier = `${projectName}${String(newCount).padStart(4, '0')}`;
-   
+
     return identifier;
 };
 
 // Create Task
 exports.createTask = async (req, res) => {
     try {
-        const { title, description, assignee, issueType, image_urls, listId, position, priority, reporter } = req.body;
+        const { title, description, assignee, issueType, image_urls, listId, position, priority, reporter, isBacklog } = req.body;
         // Kiểm tra xem listId có hợp lệ không
         const list = await List.findById(listId);
         const identifier = await generateTaskIdentifier(list.projectId);
-       
+
         if (!list) {
             logger.info('List not found');
             return sendResponse(res, 'List not found', 404);
         }
-      
+        let sprintId = null;
+
+        if (!isBacklog) {
+            let sprint = await Sprint.findOne({ status: "running", projectId: list.projectId});
+
+            if (!sprint) {
+                // Nếu không có "running", tìm Sprint có "pending" và lấy cái gần ngày startDate nhất
+                sprint = await Sprint.findOne({ status: "Pending", projectId: list.projectId }).sort({ startDate: 1 });
+            }
+
+            if (!sprint) {
+                // Nếu không có cả "running" và "pending", tạo mới Sprint
+                sprint = new Sprint({
+                    projectId: list.projectId, // Đảm bảo projectId có giá trị
+                    name: "New Sprint", // Tên mặc định
+                    status: "Pending", // Mặc định tạo mới là "running"
+                    startDate: new Date(),
+                    endDate: new Date(new Date().setDate(new Date().getDate() + 14)), // Kết thúc sau 14 ngày
+                });
+
+                await sprint.save();
+
+            }
+            sprintId = sprint._id;
+        }
+
         const newTask = new Task({
             identifier: identifier,
             title,
@@ -52,7 +78,9 @@ exports.createTask = async (req, res) => {
             listId,
             position,
             priority,
-            reporter
+            reporter,
+            sprintId,
+            isBacklog
         });
 
         const savedTask = await newTask.save();
@@ -84,8 +112,8 @@ exports.getTasks = async (req, res) => {
 exports.getTaskById = async (req, res) => {
     try {
         const task = await Task.findOne({ identifier: req.params.id })
-        .populate('assignee', 'name email avatar_url firstname lastname')
-        .populate('reporter', 'name email avatar_url firstname lastname')
+            .populate('assignee', 'name email avatar_url firstname lastname')
+            .populate('reporter', 'name email avatar_url firstname lastname')
         if (!task) {
             logger.info('Task not found');
             return sendResponse(res, 'Task not found', 404);
@@ -218,6 +246,88 @@ exports.getTasksByProjectId = async (req, res) => {
 
         logger.info(`Found ${tasks.length} tasks for project ID: ${projectId}`);
         return sendResponse(res, 'Tasks retrieved successfully', 200, { tasks, totalPages: Math.ceil(totalTasks / limit) });
+
+    } catch (error) {
+        logger.error(`Error retrieving tasks by project ID: ${error.message}`);
+        return sendResponse(res, 'Failed to retrieve tasks', 500, { error: error.message });
+    }
+};
+
+exports.getTasksByCurrentSprint = async (req, res) => {
+    try {
+        const { projectId } = req.params;
+
+        const lists = await List.find({ projectId }).select('_id name');
+        if (!lists.length) {
+            logger.info('No lists found for the given project ID');
+            return sendResponse(res, 'No lists found for the given project ID', 404);
+        }
+
+        const listIds = lists.map(list => list._id);
+        // Lấy list có name là "Done"
+        const doneList = lists.find(list => list.name === "DONE");
+
+        let sprint = await Sprint.findOne({ status: "running", projectId: projectId });
+
+        if (!sprint) {
+            sprint = await Sprint.findOne({ status: "Pending", projectId: projectId }).sort({ startDate: 1 });
+        }
+        if (!sprint) {
+            sprint = await Sprint.findOne({ status: "completed", projectId: projectId }).sort({ startDate: 1 });
+        }
+        if (!sprint) {
+            return sendResponse(res, 'No sprint found', 404);
+        }
+        console.log(sprint);
+        
+        const tasks = await Task.find({ listId: { $in: listIds }, sprintId: sprint._id })
+            .populate('listId', 'name')
+            .populate('assignee', 'name email avatar_url firstname lastname')
+            .populate('reporter', 'name email avatar_url firstname lastname')
+            .sort({ startDate: 1 });
+        // Đếm số task của list "Done"
+        const doneTaskCount = await Task.countDocuments({ listId: doneList._id, sprintId: sprint._id });
+
+        if (!tasks.length) {
+            logger.info('No tasks found for the given project ID');
+            return sendResponse(res, 'No tasks found for the given project ID', 404);
+        }
+        const completionPercentage = tasks.length > 0 ? (doneTaskCount / tasks.length) * 100 : 0;
+
+
+        logger.info(`Found ${tasks.length} tasks for project ID: ${projectId}`);
+        return sendResponse(res, 'Tasks retrieved successfully', 200, { tasks: tasks, sprint: sprint, completionPercentage: completionPercentage });
+
+    } catch (error) {
+        logger.error(`Error retrieving tasks by project ID: ${error.message}`);
+        return sendResponse(res, 'Failed to retrieve tasks', 500, { error: error.message });
+    }
+};
+
+exports.getTasksOnBacklog = async (req, res) => {
+    try {
+        const { projectId } = req.params;
+        const lists = await List.find({ projectId }).select('_id name');
+        if (!lists.length) {
+            logger.info('No lists found for the given project ID');
+            return sendResponse(res, 'No lists found for the given project ID', 404);
+        }
+
+        const listIds = lists.map(list => list._id);
+
+        const tasks = await Task.find({ listId: { $in: listIds }, isBacklog: true })
+            .populate('listId', 'name')
+            .populate('assignee', 'name email avatar_url firstname lastname')
+            .populate('reporter', 'name email avatar_url firstname lastname')
+            .sort({ startDate: 1 });
+
+        if (!tasks.length) {
+            logger.info('No tasks found for the given project ID');
+            return sendResponse(res, 'No tasks found for the given project ID', 404);
+        }
+
+        logger.info(`Found ${tasks.length} tasks for project ID: ${projectId}`);
+        return sendResponse(res, 'Tasks retrieved successfully', 200, tasks);
 
     } catch (error) {
         logger.error(`Error retrieving tasks by project ID: ${error.message}`);

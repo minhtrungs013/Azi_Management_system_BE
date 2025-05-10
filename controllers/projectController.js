@@ -1,5 +1,7 @@
 const Project = require('../models/projectModel');
 const Member = require('../models/membersModel');
+const Sprint = require('../models/SprintModel');
+const Task = require('../models/Task');
 const List = require('../models/ListModel');
 const sendResponse = require('../helpers/responseHelper');
 const logger = require('../config/logger/logger');
@@ -71,8 +73,19 @@ exports.getProjectById = async (req, res) => {
         const { id } = req.params;
 
         const project = await Project.findById(id);
+
+        let CurrentSprint = await Sprint.findOne({ status: "running", projectId: id });
+
+        if (!CurrentSprint) {
+            CurrentSprint = await Sprint.findOne({ status: "Pending", projectId: id }).sort({ startDate: 1 });
+        }
+        if (!CurrentSprint) {
+            CurrentSprint = await Sprint.findOne({ status: "completed", projectId: id }).sort({ startDate: 1 });
+        }
+
         const list = await List.find({ projectId: id }).populate({
             path: 'tasks',
+            match: CurrentSprint ? { sprintId: CurrentSprint?._id } : {isBacklog: false },
             populate: [
                 { path: 'assignee', select: 'username avatar_url firstname lastname name email location' },
                 { path: 'reporter', select: 'username avatar_url firstname lastname name email location' }
@@ -164,6 +177,95 @@ exports.getProjectIds = async (userId) => {
         return projectIdsList;
     } catch (error) {
         logger.error(`Get projects error: ${error.message}`);
+        res.status(500).json({ error: error.message });
+    }
+};
+
+exports.getProjectDashboardById = async (req, res) => {
+    try {
+        const { id } = req.params;
+
+        const project = await Project.findById(id);
+        const lists = await List.find({ projectId: id }).select('_id name');
+        if (!lists.length) {
+            logger.info('No lists found for the given project ID');
+            return sendResponse(res, 'No lists found for the given project ID', 404);
+        }
+
+        const listIds = lists.map(list => list._id);
+
+        const TaskCount = await Task.countDocuments({ listId: { $in: listIds }, issueType: 'task' });
+        const BugCount = await Task.countDocuments({ listId: { $in: listIds }, issueType: 'bug' });
+
+        const memberCount = await Member.countDocuments({ projectId: id });
+        const sprintCount = await Sprint.countDocuments({ projectId: id });
+
+        let CurrentSprint = await Sprint.findOne({ status: "running", projectId: id });
+
+        if (!CurrentSprint) {
+            CurrentSprint = await Sprint.findOne({ status: "Pending", projectId: id }).sort({ startDate: 1 });
+        }
+        if (!CurrentSprint) {
+            CurrentSprint = await Sprint.findOne({ status: "completed", projectId: id }).sort({ startDate: 1 });
+        }
+
+        let LowTaskCount = null;
+        let MediumTaskCount = null;
+        let HighTaskCount = null;
+        let inprogressPercentage = null;
+        let reviewPercentage = null;
+        let todoPercentage = null;
+        let donePercentage = null;
+        let bugPercentage = null;
+
+        if (CurrentSprint) {
+            LowTaskCount = await Task.countDocuments({ listId: { $in: listIds }, priority: 'low', sprintId: CurrentSprint._id });
+            MediumTaskCount = await Task.countDocuments({ listId: { $in: listIds }, priority: 'medium', sprintId: CurrentSprint._id });
+            HighTaskCount = await Task.countDocuments({ listId: { $in: listIds }, priority: 'high', sprintId: CurrentSprint._id });
+
+            const todoList = lists.find(list => list.name === "TO DO");
+            const inprogressList = lists.find(list => list.name === "IN PROGRESS");
+            const reviewList = lists.find(list => list.name === "REVIEW");
+            const bugList = lists.find(list => list.name === "BUG");
+            const doneList = lists.find(list => list.name === "DONE");
+
+            const doneTaskCount = await Task.countDocuments({ listId: doneList._id, sprintId: CurrentSprint._id });
+            const inprogressTaskCount = await Task.countDocuments({ listId: inprogressList._id, sprintId: CurrentSprint._id });
+            const reviewTaskCount = await Task.countDocuments({ listId: reviewList._id, sprintId: CurrentSprint._id });
+            const todoTaskCount = await Task.countDocuments({ listId: todoList._id, sprintId: CurrentSprint._id });
+            const bugTaskCount = await Task.countDocuments({ listId: bugList._id, sprintId: CurrentSprint._id });
+
+            const totalTaskCount = doneTaskCount + inprogressTaskCount + reviewTaskCount + todoTaskCount + bugTaskCount;
+
+            inprogressPercentage = Math.round((inprogressTaskCount / totalTaskCount) * 100);
+            reviewPercentage = Math.round((reviewTaskCount / totalTaskCount) * 100);
+            todoPercentage = Math.round((todoTaskCount / totalTaskCount) * 100);
+            donePercentage = Math.round((doneTaskCount / totalTaskCount) * 100);
+            bugPercentage = Math.round((bugTaskCount / totalTaskCount) * 100);
+        }
+        const response = {
+            project: {
+                taskCount: TaskCount,
+                bugCount: BugCount,
+                memberCount: memberCount,
+                sprintCount: sprintCount,
+            },
+            sprint: {
+                currentSprint: CurrentSprint,
+                lowTaskCount: LowTaskCount,
+                mediumTaskCount: MediumTaskCount,
+                highTaskCount: HighTaskCount,
+                inprogressPercentage: inprogressPercentage,
+                reviewPercentage: reviewPercentage,
+                todoPercentage: todoPercentage,
+                donePercentage: donePercentage,
+                bugPercentage: bugPercentage
+            }
+        };
+
+        return sendResponse(res, 'Get ', 201, response);
+    } catch (error) {
+        logger.error(`Get project by ID error: ${error.message}`);
         res.status(500).json({ error: error.message });
     }
 };

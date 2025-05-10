@@ -3,6 +3,7 @@ const {
     createProject,
     getProjects,
     getProjectById,
+    getProjectDashboardById,
     updateProject,
     deleteProject,
 } = require('../controllers/projectController');
@@ -14,6 +15,7 @@ const router = express.Router();
 router.post('/', authenticateToken, createProject);
 router.get('/', authenticateToken, getProjects);
 router.get('/:id', authenticateToken, getProjectById);
+router.get('/dashboard/:id', authenticateToken, getProjectDashboardById);
 router.put('/:id', authenticateToken, updateProject);
 router.delete('/:id', authenticateToken, deleteProject);
 

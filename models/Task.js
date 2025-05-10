@@ -8,6 +8,8 @@ const taskSchema = new mongoose.Schema({
     issueType: { type: String, required: true },
     image_urls: [{ type: String }],
     listId: { type: mongoose.Schema.Types.ObjectId, ref: 'List' },
+    sprintId: { type: mongoose.Schema.Types.ObjectId, ref: 'Sprint' },
+    isBacklog: { type: Boolean, default: true },
     position: { type: String, required: true },
     priority: { type: String, required: true },
     reporter: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },

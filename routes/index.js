@@ -10,6 +10,7 @@ const membersRoutes = require('./membersRoutes');
 const taskRoutes = require('./taskRoutes');
 const listRoutes = require('./listRoutes');
 const notificationRoutes = require('./notificationRoutes');
+const sprintRoutes = require('./sprintRoutes');
 
 module.exports = {
     userRoutes,
@@ -21,5 +22,6 @@ module.exports = {
     membersRoutes,
     taskRoutes,
     listRoutes,
-    notificationRoutes
+    notificationRoutes,
+    sprintRoutes
 };

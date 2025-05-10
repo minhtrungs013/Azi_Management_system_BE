@@ -51,6 +51,7 @@ app.use('/api/members', routes.membersRoutes);
 app.use('/api/tasks', routes.taskRoutes);
 app.use('/api/list', routes.listRoutes);
 app.use('/api/notifications', routes.notificationRoutes);
+app.use('/api/sprint', routes.sprintRoutes);
 
 // Route khác
 app.use((req, res, next) => {
