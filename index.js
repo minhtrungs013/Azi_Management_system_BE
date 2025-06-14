@@ -23,7 +23,8 @@ const server = http.createServer(app);
 // Khởi tạo Socket.io và liên kết với server HTTP
 const io = socketIo(server, {
     cors: {
-        origin: "http://localhost:3000", // Allow this origin
+        // origin: "http://localhost:3000", // Allow this origin
+        origin: "https://azi-management-system.vercel.app/", // Allow this origin
         // origin: "http://192.168.1.3:3000", // Allow this origin
         methods: ["GET", "POST"], // Allow GET and POST methods
         allowedHeaders: ["Content-Type"], //    Allow headers if needed
