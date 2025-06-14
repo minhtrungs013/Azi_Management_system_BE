@@ -98,6 +98,7 @@ const socketManager = (io) => {
                 from,
                 signal: signalData,
                 socketId: socket.id,
+                groupId: groupId
             });
 
             console.log(`${from} is calling group ${groupId}`);
