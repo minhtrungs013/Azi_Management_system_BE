@@ -5,17 +5,23 @@ const Task = require('../models/Task');
 const List = require('../models/ListModel');
 const sendResponse = require('../helpers/responseHelper');
 const logger = require('../config/logger/logger');
+const Permission = require('../models/permissionModel');
 
 // Tạo mới Project
 exports.createProject = async (req, res) => {
     try {
         const { name, description, created_by } = req.body;
 
+        const getPermissionAdmin = await Permission.findOne({ label: 'project_admin' });
+        if(!getPermissionAdmin) {
+            res.status(400).json({ error: "Not found Permission"});
+            return
+        }
+
         const newProject = new Project({ name, description, created_by });
         const savedProject = await newProject.save();
-
-
-        const newMember = new Member({ user: req.user.id, projectId: savedProject._id, permissions: ['6789397d033595caed04c79f'] });
+        
+        const newMember = new Member({ user: req.user.id, projectId: savedProject._id, permissions: [getPermissionAdmin._id] });
         await newMember.save();
 
         // Tạo 5 list mặc định cho project
@@ -74,13 +80,13 @@ exports.getProjectById = async (req, res) => {
 
         const project = await Project.findById(id);
 
-        let CurrentSprint = await Sprint.findOne({ status: "running", projectId: id });
+        let CurrentSprint = await Sprint.findOne({ status: "Running", projectId: id });
 
         if (!CurrentSprint) {
             CurrentSprint = await Sprint.findOne({ status: "Pending", projectId: id }).sort({ startDate: 1 });
         }
         if (!CurrentSprint) {
-            CurrentSprint = await Sprint.findOne({ status: "completed", projectId: id }).sort({ startDate: 1 });
+            CurrentSprint = await Sprint.findOne({ status: "Completed", projectId: id }).sort({ startDate: 1 });
         }
 
         const list = await List.find({ projectId: id }).populate({
@@ -200,13 +206,13 @@ exports.getProjectDashboardById = async (req, res) => {
         const memberCount = await Member.countDocuments({ projectId: id });
         const sprintCount = await Sprint.countDocuments({ projectId: id });
 
-        let CurrentSprint = await Sprint.findOne({ status: "running", projectId: id });
+        let CurrentSprint = await Sprint.findOne({ status: "Running", projectId: id });
 
         if (!CurrentSprint) {
             CurrentSprint = await Sprint.findOne({ status: "Pending", projectId: id }).sort({ startDate: 1 });
         }
         if (!CurrentSprint) {
-            CurrentSprint = await Sprint.findOne({ status: "completed", projectId: id }).sort({ startDate: 1 });
+            CurrentSprint = await Sprint.findOne({ status: "Completed", projectId: id }).sort({ startDate: 1 });
         }
 
         let LowTaskCount = null;

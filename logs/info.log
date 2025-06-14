@@ -7913,3 +7913,1631 @@ Use mongoose.model(name, schema)
 2025-02-19 00:24:05 [INFO]: Found 10 tasks for project ID: 6788c432d910e39ee9dc45ad
 2025-02-19 00:24:08 [INFO]: Members retrieved successfully for project ID: 6788c432d910e39ee9dc45ad
 2025-02-19 00:24:09 [INFO]: Members retrieved successfully for project ID: 6788c432d910e39ee9dc45ad
+2025-02-19 12:37:22 [INFO]: Server is running on http://localhost:5000
+2025-02-19 12:37:35 [ERROR]: Get projects error: Operation `members.find()` buffering timed out after 10000ms
+2025-02-19 12:37:53 [ERROR]: MongoDB connection error: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2025-02-19 12:50:41 [INFO]: Server is running on http://localhost:5000
+2025-02-19 12:51:06 [INFO]: Server is running on http://localhost:5000
+2025-02-19 12:51:36 [ERROR]: MongoDB connection error: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2025-02-19 12:54:37 [INFO]: Server is running on http://localhost:5000
+2025-02-19 12:55:07 [ERROR]: MongoDB connection error: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2025-02-19 14:12:32 [INFO]: Server is running on http://localhost:5000
+2025-02-19 14:13:03 [ERROR]: MongoDB connection error: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2025-02-19 14:13:29 [INFO]: Server is running on http://localhost:5000
+2025-02-19 14:13:30 [INFO]: MongoDB connected successfully
+2025-02-19 14:13:49 [INFO]: No members found for project ID: 6788c432d910e39ee9dc45ad
+2025-02-19 14:13:49 [INFO]: No lists found for the given project ID
+2025-02-19 14:14:12 [INFO]: No lists found for the given project ID
+2025-02-19 14:14:12 [INFO]: No members found for project ID: 6788c432d910e39ee9dc45ad
+2025-02-19 14:14:12 [INFO]: Get all projects successfully
+2025-02-19 14:14:39 [WARN]: Login failed: Username 'trung' not found.
+2025-02-19 14:14:47 [INFO]: POST /api/api/auth/register
+2025-02-19 14:15:17 [INFO]: User registered successfully: trung
+2025-02-19 14:15:24 [INFO]: User logged in successfully: {
+  _id: new ObjectId('67b585059da5facb0767c24b'),
+  firstname: 'estt',
+  lastname: 'estt',
+  email: 'test@gmail.com',
+  location: 'admin@',
+  avatar_url: 'admin@',
+  phone: '048888888',
+  isactive: true,
+  username: 'trung',
+  password: '123',
+  createdAt: 2025-02-19T07:15:17.117Z,
+  updatedAt: 2025-02-19T07:15:17.117Z,
+  __v: 0
+}
+2025-02-19 14:15:24 [INFO]: Get all projects successfully
+2025-02-19 14:15:49 [INFO]: Project created: 67b585259da5facb0767c250 with default lists
+2025-02-19 14:15:49 [INFO]: Project created: 67b585259da5facb0767c250
+2025-02-19 14:15:49 [INFO]: Get all projects successfully
+2025-02-19 14:15:57 [INFO]: Get all projects successfully
+2025-02-19 14:15:57 [INFO]: Members retrieved successfully for project ID: 67b585259da5facb0767c250
+2025-02-19 14:16:10 [INFO]: Project updated: 67b585259da5facb0767c250
+2025-02-19 14:16:10 [INFO]: Get all projects successfully
+2025-02-19 14:16:10 [INFO]: Get all projects successfully
+2025-02-19 14:16:10 [INFO]: Members retrieved successfully for project ID: 67b585259da5facb0767c250
+2025-02-19 14:16:32 [INFO]: Project updated: 67b585259da5facb0767c250
+2025-02-19 14:16:32 [INFO]: Get all projects successfully
+2025-02-19 14:16:32 [INFO]: Get all projects successfully
+2025-02-19 14:16:32 [INFO]: Members retrieved successfully for project ID: 67b585259da5facb0767c250
+2025-02-19 14:16:39 [INFO]: Members retrieved successfully for project ID: 67b585259da5facb0767c250
+2025-02-19 14:16:39 [INFO]: Members retrieved successfully for project ID: 67b585259da5facb0767c250
+2025-02-19 14:16:46 [INFO]: Get all projects successfully
+2025-02-19 14:16:46 [INFO]: Members retrieved successfully for project ID: 67b585259da5facb0767c250
+2025-02-19 14:16:53 [INFO]: Project deleted: 67b585259da5facb0767c250
+2025-02-19 14:16:53 [INFO]: Get all projects successfully
+2025-02-19 14:16:53 [INFO]: Get all projects successfully
+2025-02-19 14:17:22 [INFO]: User with ID 67b585059da5facb0767c24b updated successfully
+2025-02-19 14:17:34 [INFO]: Project created: 67b5858e9da5facb0767c288 with default lists
+2025-02-19 14:17:34 [INFO]: Project created: 67b5858e9da5facb0767c288
+2025-02-19 14:17:34 [INFO]: Get all projects successfully
+2025-02-19 14:17:34 [INFO]: Get all projects successfully
+2025-02-19 14:17:34 [INFO]: Members retrieved successfully for project ID: 67b5858e9da5facb0767c288
+2025-02-19 14:17:38 [INFO]: Members retrieved successfully for project ID: 67b5858e9da5facb0767c288
+2025-02-19 14:17:39 [INFO]: Members retrieved successfully for project ID: 67b5858e9da5facb0767c288
+2025-02-19 14:17:48 [INFO]: Get all projects successfully
+2025-02-19 14:17:48 [INFO]: Members retrieved successfully for project ID: 67b5858e9da5facb0767c288
+2025-05-12 16:54:26 [INFO]: Server is running on http://localhost:5000
+2025-05-12 16:54:28 [ERROR]: MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.project.vthg7.mongodb.net
+2025-05-12 16:55:33 [INFO]: GET /projects
+2025-05-12 16:55:45 [INFO]: GET /projects
+2025-05-12 16:55:55 [INFO]: POST /auth/login
+2025-05-12 16:56:06 [INFO]: POST /auth/login
+2025-05-12 16:56:46 [INFO]: Server is running on http://localhost:5000
+2025-05-12 16:56:48 [ERROR]: MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.project.vthg7.mongodb.net
+2025-05-12 16:56:56 [ERROR]: Get projects error: Operation `members.find()` buffering timed out after 10000ms
+2025-05-12 16:56:57 [ERROR]: Get projects error: Operation `members.find()` buffering timed out after 10000ms
+2025-05-12 16:57:11 [INFO]: POST /auth/login
+2025-05-12 16:57:54 [INFO]: POST /auth/login
+2025-05-12 16:58:29 [ERROR]: Login error: Operation `users.findOne()` buffering timed out after 10000ms
+2025-05-12 16:59:19 [INFO]: GET /projects
+2025-06-10 09:25:52 [INFO]: Server is running on http://localhost:5000
+2025-06-10 09:25:52 [ERROR]: MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.project.vthg7.mongodb.net
+2025-06-10 09:37:59 [INFO]: Server is running on http://localhost:5000
+2025-06-10 09:38:30 [ERROR]: MongoDB connection error: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2025-06-10 09:41:00 [INFO]: Server is running on http://localhost:5000
+2025-06-10 09:41:01 [INFO]: MongoDB connected successfully
+2025-06-10 09:42:55 [INFO]: GET /projects
+2025-06-10 09:42:56 [INFO]: Get all projects successfully
+2025-06-10 09:43:38 [INFO]: User registered successfully: trung
+2025-06-10 09:43:42 [INFO]: User logged in successfully: {
+  _id: new ObjectId('68479bdaa64d6128139a910c'),
+  firstname: 'estt',
+  lastname: 'estt',
+  email: 'test@gmail.com',
+  location: 'admin@',
+  avatar_url: 'admin@',
+  phone: '048888888',
+  isactive: true,
+  username: 'trung',
+  password: '123',
+  createdAt: 2025-06-10T02:43:38.661Z,
+  updatedAt: 2025-06-10T02:43:38.661Z,
+  __v: 0
+}
+2025-06-10 09:43:42 [INFO]: GET /projects
+2025-06-10 09:43:55 [INFO]: POST /projects
+2025-06-10 09:44:17 [INFO]: POST /projects
+2025-06-10 09:45:27 [INFO]: POST /projects
+2025-06-10 09:45:48 [INFO]: Get all projects successfully
+2025-06-10 09:45:48 [INFO]: Get all projects successfully
+2025-06-10 09:46:00 [INFO]: Project created: 68479c68a64d6128139a9113 with default lists
+2025-06-10 09:46:00 [INFO]: Project created: 68479c68a64d6128139a9113
+2025-06-10 09:46:00 [INFO]: Get all projects successfully
+2025-06-10 09:46:11 [INFO]: User with ID 68479bdaa64d6128139a910c updated successfully
+2025-06-10 09:46:15 [INFO]: User with ID 68479bdaa64d6128139a910c updated successfully
+2025-06-10 09:46:27 [INFO]: Members retrieved successfully for project ID: 68479c68a64d6128139a9113
+2025-06-10 09:46:44 [INFO]: Get all projects successfully
+2025-06-10 09:46:44 [INFO]: Members retrieved successfully for project ID: 68479c68a64d6128139a9113
+2025-06-10 09:46:52 [INFO]: Project deleted: 68479c68a64d6128139a9113
+2025-06-10 09:46:52 [INFO]: Get all projects successfully
+2025-06-10 09:46:53 [INFO]: Get all projects successfully
+2025-06-10 09:46:57 [INFO]: Project created: 68479ca1a64d6128139a9140 with default lists
+2025-06-10 09:46:57 [INFO]: Project created: 68479ca1a64d6128139a9140
+2025-06-10 09:46:57 [INFO]: Get all projects successfully
+2025-06-10 09:46:57 [INFO]: Get all projects successfully
+2025-06-10 09:46:57 [INFO]: Members retrieved successfully for project ID: 68479ca1a64d6128139a9140
+2025-06-10 09:47:03 [INFO]: Members retrieved successfully for project ID: 68479ca1a64d6128139a9140
+2025-06-10 09:47:05 [INFO]: Members retrieved successfully for project ID: 68479ca1a64d6128139a9140
+2025-06-10 09:47:06 [INFO]: Members retrieved successfully for project ID: 68479ca1a64d6128139a9140
+2025-06-10 09:47:11 [INFO]: No tasks found for the given project ID
+2025-06-10 09:47:11 [INFO]: Members retrieved successfully for project ID: 68479ca1a64d6128139a9140
+2025-06-10 09:47:14 [INFO]: Members retrieved successfully for project ID: 68479ca1a64d6128139a9140
+2025-06-10 09:47:17 [INFO]: No tasks found for the given project ID
+2025-06-10 09:47:17 [INFO]: Members retrieved successfully for project ID: 68479ca1a64d6128139a9140
+2025-06-10 09:47:20 [INFO]: Members retrieved successfully for project ID: 68479ca1a64d6128139a9140
+2025-06-10 09:59:27 [INFO]: Get all projects successfully
+2025-06-10 09:59:27 [INFO]: Get all projects successfully
+2025-06-10 09:59:27 [INFO]: Members retrieved successfully for project ID: 68479ca1a64d6128139a9140
+2025-06-10 10:02:59 [INFO]: Get all projects successfully
+2025-06-10 10:02:59 [INFO]: Get all projects successfully
+2025-06-10 10:03:00 [INFO]: Members retrieved successfully for project ID: 68479ca1a64d6128139a9140
+2025-06-10 10:03:07 [INFO]: Get all projects successfully
+2025-06-10 10:03:07 [INFO]: Members retrieved successfully for project ID: 68479ca1a64d6128139a9140
+2025-06-10 10:03:09 [INFO]: Members retrieved successfully for project ID: 68479ca1a64d6128139a9140
+2025-06-10 10:04:15 [INFO]: Get all projects successfully
+2025-06-10 10:04:21 [INFO]: POST /api/api/auth/login
+2025-06-10 10:04:27 [INFO]: POST /api/api/auth/register
+2025-06-10 10:04:39 [INFO]: POST /api/api/auth/register
+2025-06-10 10:04:41 [INFO]: Get all projects successfully
+2025-06-10 10:04:58 [INFO]: POST /api/api/auth/register
+2025-06-10 10:05:42 [INFO]: POST /api/api/auth/register
+2025-06-10 10:05:45 [INFO]: Get all projects successfully
+2025-06-10 10:06:03 [INFO]: Get all projects successfully
+2025-06-10 10:06:04 [INFO]: Get all projects successfully
+2025-06-10 10:06:04 [INFO]: Get all projects successfully
+2025-06-10 10:06:04 [INFO]: Members retrieved successfully for project ID: 68479ca1a64d6128139a9140
+2025-06-10 10:06:09 [INFO]: User registered successfully: test
+2025-06-10 10:06:13 [INFO]: User logged in successfully: {
+  _id: new ObjectId('6847a121a64d6128139a9227'),
+  firstname: 'estt',
+  lastname: 'estt',
+  email: 'test@gmail.com',
+  location: 'admin@',
+  avatar_url: 'admin@',
+  phone: '048888888',
+  isactive: true,
+  username: 'test',
+  password: '123',
+  createdAt: 2025-06-10T03:06:09.599Z,
+  updatedAt: 2025-06-10T03:06:09.599Z,
+  __v: 0
+}
+2025-06-10 10:06:13 [INFO]: Get all projects successfully
+2025-06-10 10:17:14 [ERROR]: Error occurred: Expected ',' or '}' after property value in JSON at position 26 (line 3 column 3)
+2025-06-10 10:17:42 [ERROR]: Error occurred: Expected ',' or '}' after property value in JSON at position 26 (line 3 column 3)
+2025-06-10 10:17:58 [ERROR]: Error occurred: Expected ',' or '}' after property value in JSON at position 26 (line 3 column 3)
+2025-06-10 10:18:39 [INFO]: Server is running on http://localhost:5000
+2025-06-10 10:18:40 [INFO]: MongoDB connected successfully
+2025-06-10 10:18:49 [INFO]: Server is running on http://localhost:5000
+2025-06-10 10:18:50 [INFO]: MongoDB connected successfully
+2025-06-10 10:19:02 [INFO]: Server is running on http://localhost:5000
+2025-06-10 10:19:03 [INFO]: MongoDB connected successfully
+2025-06-10 10:20:47 [INFO]: Get all projects successfully
+2025-06-10 10:20:47 [INFO]: Members retrieved successfully for project ID: 68479ca1a64d6128139a9140
+2025-06-10 10:20:49 [INFO]: Project deleted: 68479ca1a64d6128139a9140
+2025-06-10 10:20:49 [INFO]: Get all projects successfully
+2025-06-10 10:20:49 [INFO]: Get all projects successfully
+2025-06-10 10:25:45 [INFO]: Server is running on http://localhost:5000
+2025-06-10 10:25:46 [INFO]: MongoDB connected successfully
+2025-06-10 10:25:55 [ERROR]: Create project error: Model.find() no longer accepts a callback
+2025-06-10 10:33:29 [INFO]: Server is running on http://localhost:5000
+2025-06-10 10:33:30 [INFO]: MongoDB connected successfully
+2025-06-10 10:33:42 [INFO]: Server is running on http://localhost:5000
+2025-06-10 10:33:43 [INFO]: MongoDB connected successfully
+2025-06-10 10:46:37 [INFO]: User logged in successfully: {
+  _id: new ObjectId('68479bdaa64d6128139a910c'),
+  firstname: 'estt',
+  lastname: 'estt',
+  email: 'test@gmail.com',
+  location: 'admin@',
+  avatar_url: 'http://res.cloudinary.com/dfakxuy7c/image/upload/v1749523569/ul7wdrnfuppvedy6p7r2.jpg',
+  phone: '048888888',
+  isactive: true,
+  username: 'trung',
+  password: '123',
+  createdAt: 2025-06-10T02:43:38.661Z,
+  updatedAt: 2025-06-10T02:46:15.727Z,
+  __v: 0
+}
+2025-06-10 10:46:37 [INFO]: Get all projects successfully
+2025-06-10 10:46:37 [INFO]: Get all projects successfully
+2025-06-10 10:46:37 [INFO]: No members found for project ID: 6847a5c3bf4de9c4569ea208
+2025-06-10 10:46:44 [INFO]: Project deleted: 6847a5c3bf4de9c4569ea208
+2025-06-10 10:46:44 [INFO]: Get all projects successfully
+2025-06-10 10:46:44 [INFO]: Get all projects successfully
+2025-06-10 10:46:46 [INFO]: Get all projects successfully
+2025-06-10 10:46:46 [INFO]: Get all projects successfully
+2025-06-10 10:46:47 [INFO]: Get all projects successfully
+2025-06-10 10:46:51 [ERROR]: Create project error: Cannot read properties of null (reading '_id')
+2025-06-10 10:47:51 [INFO]: Server is running on http://localhost:5000
+2025-06-10 10:47:53 [INFO]: Server is running on http://localhost:5000
+2025-06-10 10:47:54 [INFO]: MongoDB connected successfully
+2025-06-10 10:47:56 [ERROR]: Create project error: Project validation failed: name: Path `name` is required., description: Path `description` is required., created_by: Path `created_by` is required.
+2025-06-10 10:48:15 [ERROR]: Create project error: Project validation failed: name: Path `name` is required., description: Path `description` is required., created_by: Path `created_by` is required.
+2025-06-10 10:48:29 [ERROR]: Create project error: Cannot read properties of null (reading '_id')
+2025-06-10 10:49:00 [INFO]: Get all projects successfully
+2025-06-10 10:49:00 [INFO]: Get all projects successfully
+2025-06-10 10:49:00 [INFO]: Get all projects successfully
+2025-06-10 10:49:00 [INFO]: No members found for project ID: 6847aaaba1e163eccba65972
+2025-06-10 10:49:00 [INFO]: No members found for project ID: 6847ab0df21377e4815eb5b4
+2025-06-10 10:50:38 [INFO]: Permission created: Project Admin
+2025-06-10 10:51:43 [INFO]: Permission created: Commenter
+2025-06-10 10:51:52 [INFO]: Permission created: Viewer
+2025-06-10 10:52:04 [INFO]: Permission created: Member Manager
+2025-06-10 10:52:15 [INFO]: Permission created: Content Editor
+2025-06-10 10:52:43 [INFO]: Permission created: Task Admin
+2025-06-10 10:53:03 [INFO]: Project deleted: 6847aaaba1e163eccba65972
+2025-06-10 10:53:03 [INFO]: Get all projects successfully
+2025-06-10 10:53:03 [INFO]: Get all projects successfully
+2025-06-10 10:53:03 [INFO]: No members found for project ID: 6847ab0df21377e4815eb5b4
+2025-06-10 10:53:05 [INFO]: Project deleted: 6847ab0df21377e4815eb5b4
+2025-06-10 10:53:05 [INFO]: Get all projects successfully
+2025-06-10 10:53:05 [INFO]: Get all projects successfully
+2025-06-10 10:53:13 [INFO]: Project created: 6847ac29f21377e4815eb5dd with default lists
+2025-06-10 10:53:13 [INFO]: Project created: 6847ac29f21377e4815eb5dd
+2025-06-10 10:53:13 [INFO]: Get all projects successfully
+2025-06-10 10:53:13 [INFO]: Get all projects successfully
+2025-06-10 10:53:13 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 10:53:19 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 10:53:36 [INFO]: User logged in successfully: {
+  _id: new ObjectId('6847a121a64d6128139a9227'),
+  firstname: 'estt',
+  lastname: 'estt',
+  email: 'test@gmail.com',
+  location: 'admin@',
+  avatar_url: 'admin@',
+  phone: '048888888',
+  isactive: true,
+  username: 'test',
+  password: '123',
+  createdAt: 2025-06-10T03:06:09.599Z,
+  updatedAt: 2025-06-10T03:06:09.599Z,
+  __v: 0
+}
+2025-06-10 10:53:36 [INFO]: Get all projects successfully
+2025-06-10 10:53:51 [INFO]: User with ID 6847a121a64d6128139a9227 updated successfully
+2025-06-10 10:53:58 [INFO]: Get all projects successfully
+2025-06-10 10:53:58 [INFO]: Get all projects successfully
+2025-06-10 10:53:59 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 10:54:13 [INFO]: Member created successfully for user 6847a121a64d6128139a9227 in project 6847ac29f21377e4815eb5dd
+2025-06-10 10:54:14 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 10:54:18 [INFO]: Get all projects successfully
+2025-06-10 10:54:18 [INFO]: Get all projects successfully
+2025-06-10 10:54:19 [INFO]: Get all projects successfully
+2025-06-10 10:54:19 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 10:54:27 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 10:54:27 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:00:54 [INFO]: Task created successfully with ID: 6847adf6f21377e4815eb64e
+2025-06-10 11:00:55 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:00:55 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:00:58 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:00:58 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:00:58 [INFO]: No tasks found for the given project ID
+2025-06-10 11:01:07 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:01:07 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:01:08 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:02:11 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:02:11 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:02:25 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:02:46 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:02:47 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:02:48 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:05:41 [INFO]: Server is running on http://localhost:5000
+2025-06-10 11:05:42 [INFO]: MongoDB connected successfully
+2025-06-10 11:05:45 [INFO]: Server is running on http://localhost:5000
+2025-06-10 11:05:45 [INFO]: MongoDB connected successfully
+2025-06-10 11:06:00 [INFO]: Server is running on http://localhost:5000
+2025-06-10 11:06:00 [INFO]: MongoDB connected successfully
+2025-06-10 11:06:33 [INFO]: Server is running on http://localhost:5000
+2025-06-10 11:06:33 [INFO]: MongoDB connected successfully
+2025-06-10 11:07:06 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:07:14 [INFO]: Get all projects successfully
+2025-06-10 11:07:14 [INFO]: Get all projects successfully
+2025-06-10 11:07:15 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:07:32 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:07:32 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:07:35 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:07:36 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:12:26 [INFO]: Get all projects successfully
+2025-06-10 11:12:26 [INFO]: Get all projects successfully
+2025-06-10 11:12:26 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:12:27 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:20:06 [INFO]: Get all projects successfully
+2025-06-10 11:20:06 [INFO]: Get all projects successfully
+2025-06-10 11:20:06 [INFO]: Get all projects successfully
+2025-06-10 11:20:07 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:20:07 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:20:07 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:20:07 [INFO]: Get all projects successfully
+2025-06-10 11:20:07 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:20:14 [INFO]: Get all projects successfully
+2025-06-10 11:20:15 [INFO]: Get all projects successfully
+2025-06-10 11:20:15 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:20:15 [INFO]: Get all projects successfully
+2025-06-10 11:20:15 [INFO]: Get all projects successfully
+2025-06-10 11:20:15 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:20:15 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:20:15 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:21:40 [INFO]: Get all projects successfully
+2025-06-10 11:21:40 [INFO]: Get all projects successfully
+2025-06-10 11:21:41 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:21:41 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:21:42 [INFO]: Get all projects successfully
+2025-06-10 11:21:42 [INFO]: Get all projects successfully
+2025-06-10 11:21:42 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:21:42 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:27:04 [INFO]: Get all projects successfully
+2025-06-10 11:27:36 [INFO]: User logged in successfully: {
+  _id: new ObjectId('6847a121a64d6128139a9227'),
+  firstname: 'estt',
+  lastname: 'estt',
+  email: 'test@gmail.com',
+  location: 'admin@',
+  avatar_url: 'http://res.cloudinary.com/dfakxuy7c/image/upload/v1749527629/cakaa7qjbpgrgkamifwb.jpg',
+  phone: '048888888',
+  isactive: true,
+  username: 'test',
+  password: '123',
+  createdAt: 2025-06-10T03:06:09.599Z,
+  updatedAt: 2025-06-10T03:53:51.009Z,
+  __v: 0
+}
+2025-06-10 11:27:36 [INFO]: Get all projects successfully
+2025-06-10 11:27:36 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:27:36 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:27:51 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:27:51 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:27:54 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:27:54 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:28:36 [INFO]: Get all projects successfully
+2025-06-10 11:28:36 [INFO]: Get all projects successfully
+2025-06-10 11:28:36 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:28:37 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:28:38 [INFO]: Get all projects successfully
+2025-06-10 11:28:39 [INFO]: Get all projects successfully
+2025-06-10 11:28:39 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:28:39 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:32:40 [INFO]: Get all projects successfully
+2025-06-10 11:32:40 [INFO]: Get all projects successfully
+2025-06-10 11:32:40 [INFO]: Get all projects successfully
+2025-06-10 11:32:40 [INFO]: Get all projects successfully
+2025-06-10 11:32:41 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:32:41 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:32:41 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:32:41 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:33:05 [INFO]: Get all projects successfully
+2025-06-10 11:33:05 [INFO]: Get all projects successfully
+2025-06-10 11:33:06 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:33:06 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:33:06 [INFO]: Get all projects successfully
+2025-06-10 11:33:06 [INFO]: Get all projects successfully
+2025-06-10 11:33:07 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:33:07 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:33:31 [INFO]: Get all projects successfully
+2025-06-10 11:33:31 [INFO]: Get all projects successfully
+2025-06-10 11:33:31 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:33:32 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:33:58 [INFO]: Get all projects successfully
+2025-06-10 11:33:58 [INFO]: Get all projects successfully
+2025-06-10 11:33:58 [INFO]: Get all projects successfully
+2025-06-10 11:33:58 [INFO]: Get all projects successfully
+2025-06-10 11:33:58 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:33:58 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:33:58 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:33:58 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:40:17 [INFO]: Get all projects successfully
+2025-06-10 11:40:17 [INFO]: Get all projects successfully
+2025-06-10 11:40:17 [INFO]: Get all projects successfully
+2025-06-10 11:40:18 [INFO]: Get all projects successfully
+2025-06-10 11:40:18 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:40:18 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:40:18 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:40:18 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:49:10 [INFO]: Get all projects successfully
+2025-06-10 11:49:19 [INFO]: User logged in successfully: {
+  _id: new ObjectId('68479bdaa64d6128139a910c'),
+  firstname: 'estt',
+  lastname: 'estt',
+  email: 'test@gmail.com',
+  location: 'admin@',
+  avatar_url: 'http://res.cloudinary.com/dfakxuy7c/image/upload/v1749523569/ul7wdrnfuppvedy6p7r2.jpg',
+  phone: '048888888',
+  isactive: true,
+  username: 'trung',
+  password: '123',
+  createdAt: 2025-06-10T02:43:38.661Z,
+  updatedAt: 2025-06-10T02:46:15.727Z,
+  __v: 0
+}
+2025-06-10 11:49:19 [INFO]: Get all projects successfully
+2025-06-10 11:49:20 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:49:20 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:52:07 [INFO]: Get all projects successfully
+2025-06-10 11:52:07 [INFO]: Get all projects successfully
+2025-06-10 11:52:07 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 11:52:07 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 13:45:17 [INFO]: User logged in successfully: {
+  _id: new ObjectId('68479bdaa64d6128139a910c'),
+  firstname: 'estt',
+  lastname: 'estt',
+  email: 'test@gmail.com',
+  location: 'admin@',
+  avatar_url: 'http://res.cloudinary.com/dfakxuy7c/image/upload/v1749523569/ul7wdrnfuppvedy6p7r2.jpg',
+  phone: '048888888',
+  isactive: true,
+  username: 'trung',
+  password: '123',
+  createdAt: 2025-06-10T02:43:38.661Z,
+  updatedAt: 2025-06-10T02:46:15.727Z,
+  __v: 0
+}
+2025-06-10 13:45:17 [INFO]: Get all projects successfully
+2025-06-10 13:45:17 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 13:45:17 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 13:45:25 [INFO]: User logged in successfully: {
+  _id: new ObjectId('6847a121a64d6128139a9227'),
+  firstname: 'estt',
+  lastname: 'estt',
+  email: 'test@gmail.com',
+  location: 'admin@',
+  avatar_url: 'http://res.cloudinary.com/dfakxuy7c/image/upload/v1749527629/cakaa7qjbpgrgkamifwb.jpg',
+  phone: '048888888',
+  isactive: true,
+  username: 'test',
+  password: '123',
+  createdAt: 2025-06-10T03:06:09.599Z,
+  updatedAt: 2025-06-10T03:53:51.009Z,
+  __v: 0
+}
+2025-06-10 13:45:25 [INFO]: Get all projects successfully
+2025-06-10 13:45:25 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 13:45:25 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:38:38 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:38:38 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:43:30 [INFO]: Get all projects successfully
+2025-06-10 14:43:30 [INFO]: Get all projects successfully
+2025-06-10 14:43:30 [INFO]: Get all projects successfully
+2025-06-10 14:43:30 [INFO]: Get all projects successfully
+2025-06-10 14:43:30 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:43:30 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:43:31 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:43:31 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:43:55 [INFO]: Get all projects successfully
+2025-06-10 14:43:56 [INFO]: Get all projects successfully
+2025-06-10 14:43:56 [INFO]: Get all projects successfully
+2025-06-10 14:43:56 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:43:56 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:43:56 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:43:56 [INFO]: Get all projects successfully
+2025-06-10 14:43:56 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:45:00 [INFO]: Server is running on http://localhost:5000
+2025-06-10 14:45:01 [INFO]: MongoDB connected successfully
+2025-06-10 14:45:28 [INFO]: Get all projects successfully
+2025-06-10 14:45:29 [INFO]: Get all projects successfully
+2025-06-10 14:45:35 [INFO]: User logged in successfully: {
+  _id: new ObjectId('68479bdaa64d6128139a910c'),
+  firstname: 'estt',
+  lastname: 'estt',
+  email: 'test@gmail.com',
+  location: 'admin@',
+  avatar_url: 'http://res.cloudinary.com/dfakxuy7c/image/upload/v1749523569/ul7wdrnfuppvedy6p7r2.jpg',
+  phone: '048888888',
+  isactive: true,
+  username: 'trung',
+  password: '123',
+  createdAt: 2025-06-10T02:43:38.661Z,
+  updatedAt: 2025-06-10T02:46:15.727Z,
+  __v: 0
+}
+2025-06-10 14:45:35 [INFO]: Get all projects successfully
+2025-06-10 14:45:35 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:45:35 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:45:38 [INFO]: Get all projects successfully
+2025-06-10 14:45:38 [INFO]: Get all projects successfully
+2025-06-10 14:45:39 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:45:39 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:45:43 [INFO]: User logged in successfully: {
+  _id: new ObjectId('6847a121a64d6128139a9227'),
+  firstname: 'estt',
+  lastname: 'estt',
+  email: 'test@gmail.com',
+  location: 'admin@',
+  avatar_url: 'http://res.cloudinary.com/dfakxuy7c/image/upload/v1749527629/cakaa7qjbpgrgkamifwb.jpg',
+  phone: '048888888',
+  isactive: true,
+  username: 'test',
+  password: '123',
+  createdAt: 2025-06-10T03:06:09.599Z,
+  updatedAt: 2025-06-10T03:53:51.009Z,
+  __v: 0
+}
+2025-06-10 14:45:43 [INFO]: Get all projects successfully
+2025-06-10 14:45:44 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:45:44 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:45:45 [INFO]: Get all projects successfully
+2025-06-10 14:45:45 [INFO]: Get all projects successfully
+2025-06-10 14:45:45 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:45:45 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:46:03 [INFO]: Get all projects successfully
+2025-06-10 14:46:03 [INFO]: Get all projects successfully
+2025-06-10 14:46:03 [INFO]: Get all projects successfully
+2025-06-10 14:46:04 [INFO]: Get all projects successfully
+2025-06-10 14:46:04 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:46:04 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:46:04 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:46:04 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:50:59 [INFO]: Get all projects successfully
+2025-06-10 14:50:59 [INFO]: Get all projects successfully
+2025-06-10 14:51:00 [INFO]: Get all projects successfully
+2025-06-10 14:51:00 [INFO]: Get all projects successfully
+2025-06-10 14:51:00 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:51:00 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:51:00 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:51:00 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:57:37 [INFO]: Get all projects successfully
+2025-06-10 14:57:37 [INFO]: Get all projects successfully
+2025-06-10 14:57:38 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:57:38 [INFO]: Get all projects successfully
+2025-06-10 14:57:38 [INFO]: Get all projects successfully
+2025-06-10 14:57:38 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:57:38 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:57:38 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:57:55 [INFO]: Get all projects successfully
+2025-06-10 14:57:55 [INFO]: Get all projects successfully
+2025-06-10 14:57:56 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:57:56 [INFO]: Get all projects successfully
+2025-06-10 14:57:56 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:57:56 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:57:56 [INFO]: Get all projects successfully
+2025-06-10 14:57:56 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:59:57 [INFO]: Get all projects successfully
+2025-06-10 14:59:57 [INFO]: Get all projects successfully
+2025-06-10 14:59:58 [INFO]: Get all projects successfully
+2025-06-10 14:59:58 [INFO]: Get all projects successfully
+2025-06-10 14:59:58 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:59:58 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:59:58 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 14:59:58 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:25:17 [INFO]: User logged in successfully: {
+  _id: new ObjectId('68479bdaa64d6128139a910c'),
+  firstname: 'estt',
+  lastname: 'estt',
+  email: 'test@gmail.com',
+  location: 'admin@',
+  avatar_url: 'http://res.cloudinary.com/dfakxuy7c/image/upload/v1749523569/ul7wdrnfuppvedy6p7r2.jpg',
+  phone: '048888888',
+  isactive: true,
+  username: 'trung',
+  password: '123',
+  createdAt: 2025-06-10T02:43:38.661Z,
+  updatedAt: 2025-06-10T02:46:15.727Z,
+  __v: 0
+}
+2025-06-10 16:25:17 [INFO]: Get all projects successfully
+2025-06-10 16:25:17 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:25:18 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:25:23 [INFO]: User logged in successfully: {
+  _id: new ObjectId('6847a121a64d6128139a9227'),
+  firstname: 'estt',
+  lastname: 'estt',
+  email: 'test@gmail.com',
+  location: 'admin@',
+  avatar_url: 'http://res.cloudinary.com/dfakxuy7c/image/upload/v1749527629/cakaa7qjbpgrgkamifwb.jpg',
+  phone: '048888888',
+  isactive: true,
+  username: 'test',
+  password: '123',
+  createdAt: 2025-06-10T03:06:09.599Z,
+  updatedAt: 2025-06-10T03:53:51.009Z,
+  __v: 0
+}
+2025-06-10 16:25:23 [INFO]: Get all projects successfully
+2025-06-10 16:25:24 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:25:24 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:26:45 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:26:48 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:26:48 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:27:28 [INFO]: Task created successfully with ID: 6847fa804078b3b7354d7407
+2025-06-10 16:27:29 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:27:29 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:27:57 [INFO]: Task updated successfully with ID: 6847fa804078b3b7354d7407
+2025-06-10 16:27:57 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:27:57 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:33:42 [INFO]: Get all projects successfully
+2025-06-10 16:33:43 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:33:43 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:34:00 [INFO]: Get all projects successfully
+2025-06-10 16:34:23 [INFO]: Get all projects successfully
+2025-06-10 16:34:23 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:34:23 [INFO]: Get all projects successfully
+2025-06-10 16:34:23 [INFO]: Lists fetched successfully
+2025-06-10 16:34:23 [INFO]: Task fetched successfully with ID: 6847fa804078b3b7354d7407
+2025-06-10 16:35:12 [INFO]: Get all projects successfully
+2025-06-10 16:35:12 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:39:06 [INFO]: Get all projects successfully
+2025-06-10 16:39:06 [INFO]: Get all projects successfully
+2025-06-10 16:39:06 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:39:07 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:39:10 [INFO]: Get all projects successfully
+2025-06-10 16:39:10 [INFO]: Get all projects successfully
+2025-06-10 16:39:10 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:39:10 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:39:12 [INFO]: Get all projects successfully
+2025-06-10 16:39:12 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:39:13 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:46:14 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:46:35 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:46:35 [INFO]: No tasks found for the given project ID
+2025-06-10 16:46:35 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:48:31 [INFO]: Task created successfully with ID: 6847ff6f4078b3b7354d74f1
+2025-06-10 16:48:36 [INFO]: Get all projects successfully
+2025-06-10 16:48:36 [INFO]: Get all projects successfully
+2025-06-10 16:48:37 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:48:37 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:48:37 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:49:11 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:49:11 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:49:13 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:49:13 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:49:13 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:49:54 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:59:45 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:59:45 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:59:54 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 16:59:54 [INFO]: Get all projects successfully
+2025-06-10 16:59:54 [INFO]: Get all projects successfully
+2025-06-10 16:59:54 [INFO]: Lists fetched successfully
+2025-06-10 16:59:54 [INFO]: Task fetched successfully with ID: 6847adf6f21377e4815eb64e
+2025-06-10 17:00:09 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:00:14 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:00:14 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:00:59 [INFO]: Get all projects successfully
+2025-06-10 17:00:59 [INFO]: Get all projects successfully
+2025-06-10 17:01:00 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:01:00 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:01:01 [INFO]: Get all projects successfully
+2025-06-10 17:01:01 [INFO]: Get all projects successfully
+2025-06-10 17:01:01 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:01:01 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:01:14 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:01:14 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:01:14 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:01:54 [INFO]: Get all projects successfully
+2025-06-10 17:01:54 [INFO]: Get all projects successfully
+2025-06-10 17:01:54 [INFO]: Get all projects successfully
+2025-06-10 17:01:54 [INFO]: Get all projects successfully
+2025-06-10 17:01:55 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:01:55 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:01:55 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:01:55 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:01:55 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:07:27 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:07:27 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:07:28 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:07:45 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:07:45 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:07:45 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:08:13 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:08:13 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:08:13 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:08:17 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:08:17 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:08:17 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:08:22 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:08:23 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:08:23 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:09:01 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:09:01 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:09:01 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:09:12 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:09:12 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:09:12 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:10:50 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:10:50 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:10:50 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:11:04 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:11:04 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:11:04 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:11:12 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:11:12 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:11:13 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:11:21 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:11:21 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:11:21 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:11:38 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:11:38 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:11:38 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:12:33 [INFO]: Server is running on http://localhost:5000
+2025-06-10 17:12:34 [INFO]: MongoDB connected successfully
+2025-06-10 17:13:41 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:13:42 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:13:42 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:13:49 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:13:49 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:13:49 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:20:03 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:20:03 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:20:03 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:20:13 [INFO]: Sprint updated: 6847adf6f21377e4815eb64c
+2025-06-10 17:20:22 [INFO]: Get all projects successfully
+2025-06-10 17:20:22 [INFO]: Get all projects successfully
+2025-06-10 17:20:22 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:20:22 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:20:27 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:20:31 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:20:31 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:20:49 [INFO]: Sprint created: 68480701ccac1b41e43e2d36
+2025-06-10 17:20:51 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:20:51 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:20:52 [INFO]: No tasks found for the given project ID
+2025-06-10 17:20:52 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:20:52 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:20:54 [INFO]: Get all projects successfully
+2025-06-10 17:20:54 [INFO]: Get all projects successfully
+2025-06-10 17:20:54 [INFO]: No tasks found for the given project ID
+2025-06-10 17:20:54 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:20:54 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:20:59 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:20:59 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:21:00 [INFO]: No tasks found for the given project ID
+2025-06-10 17:21:00 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:21:00 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:21:21 [INFO]: Get all projects successfully
+2025-06-10 17:21:21 [INFO]: Get all projects successfully
+2025-06-10 17:21:22 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:21:28 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:21:28 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:21:29 [INFO]: No tasks found for the given project ID
+2025-06-10 17:21:29 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:21:29 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:21:30 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:21:31 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:21:44 [INFO]: Task created successfully with ID: 68480738ccac1b41e43e2e02
+2025-06-10 17:21:44 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:21:44 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:21:46 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:21:46 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:21:46 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:22:00 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:22:02 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:22:02 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:22:02 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:33:15 [INFO]: Server is running on http://localhost:5000
+2025-06-10 17:33:16 [INFO]: MongoDB connected successfully
+2025-06-10 17:35:12 [INFO]: Server is running on http://localhost:5000
+2025-06-10 17:35:13 [INFO]: MongoDB connected successfully
+2025-06-10 17:35:20 [INFO]: Get all projects successfully
+2025-06-10 17:35:20 [INFO]: Get all projects successfully
+2025-06-10 17:35:20 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:35:21 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:35:21 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:35:31 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:35:31 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:35:31 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:38:20 [INFO]: Get all projects successfully
+2025-06-10 17:38:20 [INFO]: Get all projects successfully
+2025-06-10 17:38:20 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:38:20 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:38:20 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:42:08 [INFO]: User logged in successfully: {
+  _id: new ObjectId('68479bdaa64d6128139a910c'),
+  firstname: 'estt',
+  lastname: 'estt',
+  email: 'test@gmail.com',
+  location: 'admin@',
+  avatar_url: 'http://res.cloudinary.com/dfakxuy7c/image/upload/v1749523569/ul7wdrnfuppvedy6p7r2.jpg',
+  phone: '048888888',
+  isactive: true,
+  username: 'trung',
+  password: '123',
+  createdAt: 2025-06-10T02:43:38.661Z,
+  updatedAt: 2025-06-10T02:46:15.727Z,
+  __v: 0
+}
+2025-06-10 17:42:08 [ERROR]: Get project by ID error: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Project"
+2025-06-10 17:42:08 [INFO]: Get all projects successfully
+2025-06-10 17:42:10 [ERROR]: Get project by ID error: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Project"
+2025-06-10 17:42:10 [ERROR]: Error retrieving tasks by project ID: Cast to ObjectId failed for value "undefined" (type string) at path "projectId" for model "List"
+2025-06-10 17:42:10 [ERROR]: Error retrieving members by project ID: Cast to ObjectId failed for value "undefined" (type string) at path "projectId" for model "Member"
+2025-06-10 17:42:10 [ERROR]: Error retrieving tasks by project ID: Cast to ObjectId failed for value "undefined" (type string) at path "projectId" for model "List"
+2025-06-10 17:42:10 [ERROR]: Error fetching sprints: Cast to ObjectId failed for value "undefined" (type string) at path "projectId" for model "Sprint"
+2025-06-10 17:42:13 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:42:14 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:42:15 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:42:15 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:42:16 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:42:16 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:51:28 [INFO]: Get all projects successfully
+2025-06-10 17:51:28 [INFO]: Get all projects successfully
+2025-06-10 17:51:29 [INFO]: Get all projects successfully
+2025-06-10 17:51:29 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:51:29 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:51:34 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:51:34 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:51:34 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:51:54 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:51:54 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:51:54 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:52:00 [INFO]: Get all projects successfully
+2025-06-10 17:52:00 [INFO]: Get all projects successfully
+2025-06-10 17:52:00 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:52:00 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:52:00 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:52:04 [INFO]: No sprint found for the given project ID
+2025-06-10 17:52:18 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:52:18 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:52:18 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:52:23 [INFO]: No sprint found for the given project ID
+2025-06-10 17:53:07 [INFO]: Server is running on http://localhost:5000
+2025-06-10 17:53:10 [INFO]: MongoDB connected successfully
+2025-06-10 17:53:10 [INFO]: No sprint found for the given project ID
+2025-06-10 17:53:53 [INFO]: Server is running on http://localhost:5000
+2025-06-10 17:53:53 [INFO]: MongoDB connected successfully
+2025-06-10 17:53:59 [INFO]: No sprint found for the given project ID
+2025-06-10 17:54:22 [INFO]: Server is running on http://localhost:5000
+2025-06-10 17:54:23 [INFO]: MongoDB connected successfully
+2025-06-10 17:55:08 [INFO]: Get all projects successfully
+2025-06-10 17:55:08 [INFO]: Get all projects successfully
+2025-06-10 17:55:08 [INFO]: Get all projects successfully
+2025-06-10 17:55:08 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:55:08 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:55:08 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:55:15 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:55:15 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:55:15 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:55:22 [INFO]: No tasks found for the given project ID
+2025-06-10 17:55:39 [INFO]: Server is running on http://localhost:5000
+2025-06-10 17:55:41 [INFO]: MongoDB connected successfully
+2025-06-10 17:55:45 [INFO]: No tasks found for the given project ID
+2025-06-10 17:56:02 [INFO]: No tasks found for the given project ID
+2025-06-10 17:57:01 [INFO]: Server is running on http://localhost:5000
+2025-06-10 17:57:03 [INFO]: MongoDB connected successfully
+2025-06-10 17:57:07 [INFO]: Server is running on http://localhost:5000
+2025-06-10 17:57:08 [INFO]: MongoDB connected successfully
+2025-06-10 17:57:10 [INFO]: Server is running on http://localhost:5000
+2025-06-10 17:57:10 [INFO]: MongoDB connected successfully
+2025-06-10 17:57:16 [INFO]: Get all projects successfully
+2025-06-10 17:57:16 [INFO]: Get all projects successfully
+2025-06-10 17:57:17 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:57:17 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:57:17 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:57:24 [INFO]: Found undefined tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 17:59:09 [INFO]: Server is running on http://localhost:5000
+2025-06-10 17:59:10 [INFO]: MongoDB connected successfully
+2025-06-10 17:59:15 [INFO]: Get all projects successfully
+2025-06-10 17:59:15 [INFO]: Get all projects successfully
+2025-06-10 17:59:15 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:59:15 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:59:15 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 17:59:19 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 17:59:23 [INFO]: Sprint updated: 6847adf6f21377e4815eb64c
+2025-06-10 17:59:27 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 17:59:47 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 17:59:55 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 17:59:58 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 18:00:06 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 18:00:09 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 18:00:12 [INFO]: Get all projects successfully
+2025-06-10 18:00:12 [INFO]: Get all projects successfully
+2025-06-10 18:00:12 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 18:00:12 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 18:00:12 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 18:00:14 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 18:00:39 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 18:01:18 [INFO]: Server is running on http://localhost:5000
+2025-06-10 18:01:19 [INFO]: MongoDB connected successfully
+2025-06-10 18:01:21 [INFO]: Get all projects successfully
+2025-06-10 18:01:21 [INFO]: Get all projects successfully
+2025-06-10 18:01:21 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 18:01:21 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 18:01:21 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 18:01:27 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 18:01:29 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 18:01:31 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 18:03:10 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 18:03:11 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 18:04:30 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 18:04:32 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 18:06:10 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 18:06:12 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 18:06:16 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 18:06:47 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 18:06:47 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 18:06:54 [INFO]: Found 4 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 18:06:54 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 18:08:44 [INFO]: Server is running on http://localhost:5000
+2025-06-10 18:08:45 [INFO]: MongoDB connected successfully
+2025-06-10 18:09:21 [INFO]: Server is running on http://localhost:5000
+2025-06-10 18:09:22 [INFO]: MongoDB connected successfully
+2025-06-10 18:11:39 [INFO]: Server is running on http://localhost:5000
+2025-06-10 18:11:40 [INFO]: MongoDB connected successfully
+2025-06-10 18:11:49 [INFO]: Get all projects successfully
+2025-06-10 18:11:49 [INFO]: Get all projects successfully
+2025-06-10 18:11:49 [INFO]: Found 3 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 18:11:49 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 18:20:13 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 18:20:13 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 18:20:13 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 18:20:15 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 18:20:17 [INFO]: Get all projects successfully
+2025-06-10 18:20:17 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 18:20:17 [INFO]: Get all projects successfully
+2025-06-10 18:20:17 [INFO]: Lists fetched successfully
+2025-06-10 18:20:17 [INFO]: Task fetched successfully with ID: 6847fa804078b3b7354d7407
+2025-06-10 18:20:23 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 18:20:23 [INFO]: Get all projects successfully
+2025-06-10 18:20:23 [INFO]: Get all projects successfully
+2025-06-10 18:20:23 [INFO]: Lists fetched successfully
+2025-06-10 18:20:23 [INFO]: Task fetched successfully with ID: 6847adf6f21377e4815eb64e
+2025-06-10 18:23:22 [INFO]: Found 3 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 18:23:22 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 18:23:24 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 18:23:24 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 18:23:24 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:07:18 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:07:18 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:07:19 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:08:54 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:08:54 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:08:54 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:09:02 [INFO]: Server is running on http://localhost:5000
+2025-06-10 19:09:03 [INFO]: MongoDB connected successfully
+2025-06-10 19:09:06 [INFO]: User logged in successfully: {
+  _id: new ObjectId('68479bdaa64d6128139a910c'),
+  firstname: 'estt',
+  lastname: 'estt',
+  email: 'test@gmail.com',
+  location: 'admin@',
+  avatar_url: 'http://res.cloudinary.com/dfakxuy7c/image/upload/v1749523569/ul7wdrnfuppvedy6p7r2.jpg',
+  phone: '048888888',
+  isactive: true,
+  username: 'trung',
+  password: '123',
+  createdAt: 2025-06-10T02:43:38.661Z,
+  updatedAt: 2025-06-10T02:46:15.727Z,
+  __v: 0
+}
+2025-06-10 19:09:06 [INFO]: Get all projects successfully
+2025-06-10 19:09:09 [INFO]: Get all projects successfully
+2025-06-10 19:09:09 [INFO]: Get all projects successfully
+2025-06-10 19:09:09 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:09:09 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:09:09 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:09:14 [INFO]: Sprint updated: 68480701ccac1b41e43e2d36
+2025-06-10 19:09:19 [INFO]: Get all projects successfully
+2025-06-10 19:09:19 [INFO]: Get all projects successfully
+2025-06-10 19:09:20 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:09:20 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:09:20 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:09:45 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 19:09:48 [INFO]: Sprint updated: 6847adf6f21377e4815eb64c
+2025-06-10 19:10:15 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:10:15 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:10:15 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:10:17 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 19:10:19 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 19:13:58 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 19:14:33 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:14:34 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:14:34 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:14:41 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:14:42 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:14:42 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:14:48 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:14:48 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:14:48 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:15:02 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:15:02 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:15:02 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:15:07 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:15:07 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:15:07 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:15:13 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 19:15:16 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 19:15:18 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 19:15:27 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:15:27 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:15:27 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:17:56 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:17:56 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:17:56 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:18:00 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 19:18:02 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 19:18:38 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:18:39 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:18:39 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:18:41 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 19:18:42 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 19:18:47 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 19:19:17 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:19:17 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:19:17 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:19:26 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:19:26 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:19:26 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:19:49 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:19:49 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:19:49 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:20:03 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:20:03 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:20:03 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:20:18 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:20:18 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:20:18 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:20:27 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 19:20:30 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 19:20:36 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 19:20:39 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 19:22:24 [ERROR]: Error creating task: Task validation failed: assignee: Cast to ObjectId failed for value "" (type string) at path "assignee" because of "BSONError"
+2025-06-10 19:22:32 [INFO]: User logged in successfully: {
+  _id: new ObjectId('68479bdaa64d6128139a910c'),
+  firstname: 'estt',
+  lastname: 'estt',
+  email: 'test@gmail.com',
+  location: 'admin@',
+  avatar_url: 'http://res.cloudinary.com/dfakxuy7c/image/upload/v1749523569/ul7wdrnfuppvedy6p7r2.jpg',
+  phone: '048888888',
+  isactive: true,
+  username: 'trung',
+  password: '123',
+  createdAt: 2025-06-10T02:43:38.661Z,
+  updatedAt: 2025-06-10T02:46:15.727Z,
+  __v: 0
+}
+2025-06-10 19:22:32 [INFO]: Get all projects successfully
+2025-06-10 19:22:43 [INFO]: Task created successfully with ID: 684823934ab75cbb48c445f3
+2025-06-10 19:22:45 [INFO]: Get all projects successfully
+2025-06-10 19:22:45 [INFO]: Get all projects successfully
+2025-06-10 19:22:46 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:22:46 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:22:46 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:22:53 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 19:22:55 [INFO]: Found 1 tasks for sprint ID: 684823804ab75cbb48c445e8
+2025-06-10 19:22:57 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 19:23:01 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 19:23:03 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 19:23:04 [INFO]: Found 1 tasks for sprint ID: 684823804ab75cbb48c445e8
+2025-06-10 19:23:57 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:23:57 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:23:57 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:24:11 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:24:11 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:24:11 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:24:15 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 19:24:18 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 19:24:20 [INFO]: Found 1 tasks for sprint ID: 684823804ab75cbb48c445e8
+2025-06-10 19:24:21 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 19:24:23 [INFO]: Found 1 tasks for sprint ID: 684823804ab75cbb48c445e8
+2025-06-10 19:24:42 [INFO]: Task created successfully with ID: 6848240a4ab75cbb48c4467b
+2025-06-10 19:24:46 [INFO]: Get all projects successfully
+2025-06-10 19:24:46 [INFO]: Get all projects successfully
+2025-06-10 19:24:46 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:24:47 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:24:47 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:24:48 [INFO]: Found 2 tasks for sprint ID: 684823804ab75cbb48c445e8
+2025-06-10 19:25:02 [INFO]: Task created successfully with ID: 6848241e4ab75cbb48c446a1
+2025-06-10 19:25:05 [INFO]: Get all projects successfully
+2025-06-10 19:25:05 [INFO]: Get all projects successfully
+2025-06-10 19:25:05 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:25:05 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:25:05 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:25:08 [INFO]: Found 2 tasks for sprint ID: 684823804ab75cbb48c445e8
+2025-06-10 19:26:00 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:26:00 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:26:00 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:26:04 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 19:26:05 [INFO]: Found 2 tasks for sprint ID: 684823804ab75cbb48c445e8
+2025-06-10 19:27:10 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:27:11 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:27:11 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:27:18 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:27:18 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:27:18 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:27:38 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:27:38 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:27:38 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:27:59 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:28:00 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:28:00 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:28:10 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 19:28:12 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 19:28:19 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:28:19 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 19:28:19 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:31:24 [INFO]: User logged in successfully: {
+  _id: new ObjectId('68479bdaa64d6128139a910c'),
+  firstname: 'estt',
+  lastname: 'estt',
+  email: 'test@gmail.com',
+  location: 'admin@',
+  avatar_url: 'http://res.cloudinary.com/dfakxuy7c/image/upload/v1749523569/ul7wdrnfuppvedy6p7r2.jpg',
+  phone: '048888888',
+  isactive: true,
+  username: 'trung',
+  password: '123',
+  createdAt: 2025-06-10T02:43:38.661Z,
+  updatedAt: 2025-06-10T02:46:15.727Z,
+  __v: 0
+}
+2025-06-10 23:31:24 [INFO]: Get all projects successfully
+2025-06-10 23:31:28 [INFO]: Get all projects successfully
+2025-06-10 23:31:28 [INFO]: Get all projects successfully
+2025-06-10 23:31:28 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:31:28 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:31:29 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:31:32 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 23:31:34 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 23:31:39 [INFO]: Found 2 tasks for sprint ID: 684823804ab75cbb48c445e8
+2025-06-10 23:31:41 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 23:32:31 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:32:31 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:32:31 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:32:41 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:32:41 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:32:41 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:32:46 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:32:47 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:32:47 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:32:48 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:32:49 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:32:49 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:33:18 [INFO]: Sprint updated: 68480701ccac1b41e43e2d36
+2025-06-10 23:33:22 [INFO]: Get all projects successfully
+2025-06-10 23:33:22 [INFO]: Get all projects successfully
+2025-06-10 23:33:22 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:33:22 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:33:22 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:33:25 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 23:33:27 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 23:33:29 [INFO]: Found 2 tasks for sprint ID: 684823804ab75cbb48c445e8
+2025-06-10 23:33:55 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:33:55 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:33:55 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:34:45 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:34:46 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:34:46 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:34:48 [INFO]: Sprint updated: 684823804ab75cbb48c445e8
+2025-06-10 23:34:49 [INFO]: Get all projects successfully
+2025-06-10 23:34:53 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 23:34:55 [INFO]: Found 2 tasks for sprint ID: 684823804ab75cbb48c445e8
+2025-06-10 23:36:48 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:36:48 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:36:49 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:36:55 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 23:36:57 [INFO]: Found 2 tasks for sprint ID: 684823804ab75cbb48c445e8
+2025-06-10 23:36:59 [INFO]: Sprint updated: 684823804ab75cbb48c445e8
+2025-06-10 23:36:59 [INFO]: Get all projects successfully
+2025-06-10 23:37:00 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:37:00 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:37:13 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 23:37:15 [INFO]: Found 2 tasks for sprint ID: 684823804ab75cbb48c445e8
+2025-06-10 23:37:18 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 23:37:21 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 23:37:43 [INFO]: Task created successfully with ID: 68485f574ab75cbb48c448a8
+2025-06-10 23:37:45 [INFO]: Found 2 tasks for sprint ID: 684823804ab75cbb48c445e8
+2025-06-10 23:37:46 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 23:37:48 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 23:37:51 [INFO]: Get all projects successfully
+2025-06-10 23:37:51 [INFO]: Get all projects successfully
+2025-06-10 23:37:52 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:37:52 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:37:52 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:37:53 [INFO]: Found 1 tasks for sprint ID: 68485f574ab75cbb48c448a6
+2025-06-10 23:38:07 [INFO]: Sprint updated: 68485f574ab75cbb48c448a6
+2025-06-10 23:38:07 [INFO]: Get all projects successfully
+2025-06-10 23:38:08 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:38:08 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:38:11 [INFO]: Sprint updated: 68485f574ab75cbb48c448a6
+2025-06-10 23:38:11 [INFO]: Get all projects successfully
+2025-06-10 23:38:12 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:38:12 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:38:19 [INFO]: Get all projects successfully
+2025-06-10 23:38:19 [INFO]: Get all projects successfully
+2025-06-10 23:38:20 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:38:20 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:38:20 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:38:22 [INFO]: Get all projects successfully
+2025-06-10 23:38:22 [INFO]: Get all projects successfully
+2025-06-10 23:38:22 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:38:22 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:38:22 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:39:38 [INFO]: Server is running on http://localhost:5000
+2025-06-10 23:39:40 [INFO]: MongoDB connected successfully
+2025-06-10 23:39:41 [INFO]: Get all projects successfully
+2025-06-10 23:39:41 [INFO]: Get all projects successfully
+2025-06-10 23:39:41 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:39:41 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:39:41 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:39:50 [INFO]: Found 1 tasks for sprint ID: 68485f574ab75cbb48c448a6
+2025-06-10 23:39:52 [INFO]: Found 2 tasks for sprint ID: 684823804ab75cbb48c445e8
+2025-06-10 23:39:54 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 23:39:57 [INFO]: Found 1 tasks for sprint ID: 68485f574ab75cbb48c448a6
+2025-06-10 23:40:00 [INFO]: Get all projects successfully
+2025-06-10 23:40:00 [INFO]: Get all projects successfully
+2025-06-10 23:40:00 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:40:00 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:40:01 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:40:26 [INFO]: Server is running on http://localhost:5000
+2025-06-10 23:40:26 [INFO]: MongoDB connected successfully
+2025-06-10 23:40:29 [INFO]: Get all projects successfully
+2025-06-10 23:40:29 [INFO]: Get all projects successfully
+2025-06-10 23:40:29 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:40:29 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:40:29 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:40:47 [INFO]: Found 1 tasks for sprint ID: 68485f574ab75cbb48c448a6
+2025-06-10 23:40:50 [INFO]: Found 2 tasks for sprint ID: 684823804ab75cbb48c445e8
+2025-06-10 23:40:52 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 23:40:53 [INFO]: Found 2 tasks for sprint ID: 6847adf6f21377e4815eb64c
+2025-06-10 23:40:55 [INFO]: Found 1 tasks for sprint ID: 68480701ccac1b41e43e2d36
+2025-06-10 23:40:56 [INFO]: Found 2 tasks for sprint ID: 684823804ab75cbb48c445e8
+2025-06-10 23:40:58 [INFO]: Found 1 tasks for sprint ID: 68485f574ab75cbb48c448a6
+2025-06-10 23:41:16 [INFO]: Sprint created: 6848602c805da42eb7b8e97a
+2025-06-10 23:41:25 [INFO]: Sprint created: 68486035805da42eb7b8e97c
+2025-06-10 23:41:28 [INFO]: Get all projects successfully
+2025-06-10 23:41:28 [INFO]: Get all projects successfully
+2025-06-10 23:41:28 [INFO]: No tasks found for the given project ID
+2025-06-10 23:41:29 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:41:29 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:41:34 [INFO]: Get all projects successfully
+2025-06-10 23:41:34 [INFO]: Get all projects successfully
+2025-06-10 23:41:34 [INFO]: No tasks found for the given project ID
+2025-06-10 23:41:34 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:41:34 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:42:42 [INFO]: Server is running on http://localhost:5000
+2025-06-10 23:42:43 [INFO]: MongoDB connected successfully
+2025-06-10 23:42:45 [INFO]: Get all projects successfully
+2025-06-10 23:42:45 [INFO]: Get all projects successfully
+2025-06-10 23:42:46 [INFO]: Found 0 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:42:46 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:42:46 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:44:03 [INFO]: Found 6 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:44:04 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:44:10 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:44:10 [INFO]: Get all projects successfully
+2025-06-10 23:44:10 [INFO]: Get all projects successfully
+2025-06-10 23:44:10 [INFO]: Lists fetched successfully
+2025-06-10 23:44:11 [INFO]: Task fetched successfully with ID: 68485f574ab75cbb48c448a8
+2025-06-10 23:44:18 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:44:18 [INFO]: Get all projects successfully
+2025-06-10 23:44:18 [INFO]: Get all projects successfully
+2025-06-10 23:44:18 [INFO]: Lists fetched successfully
+2025-06-10 23:44:18 [INFO]: Task fetched successfully with ID: 6847adf6f21377e4815eb64e
+2025-06-10 23:44:52 [INFO]: Found 6 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:44:55 [INFO]: Found 6 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:44:56 [INFO]: Found 3 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:44:57 [INFO]: Found 6 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:45:02 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:45:04 [INFO]: Found 6 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:46:06 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:46:27 [INFO]: Found 0 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:46:27 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:46:28 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:46:34 [INFO]: Found 0 tasks for sprint ID: 6848602c805da42eb7b8e97a
+2025-06-10 23:46:36 [INFO]: Found 1 tasks for sprint ID: 68485f574ab75cbb48c448a6
+2025-06-10 23:46:37 [INFO]: Found 0 tasks for sprint ID: 68486035805da42eb7b8e97c
+2025-06-10 23:46:39 [INFO]: Found 0 tasks for sprint ID: 6848602c805da42eb7b8e97a
+2025-06-10 23:46:49 [INFO]: Task created successfully with ID: 68486178289eb5fe307b67af
+2025-06-10 23:46:51 [INFO]: Found 0 tasks for sprint ID: 68486035805da42eb7b8e97c
+2025-06-10 23:46:52 [INFO]: Found 1 tasks for sprint ID: 6848602c805da42eb7b8e97a
+2025-06-10 23:46:55 [INFO]: Found 0 tasks for sprint ID: 68486035805da42eb7b8e97c
+2025-06-10 23:46:56 [INFO]: Found 1 tasks for sprint ID: 6848602c805da42eb7b8e97a
+2025-06-10 23:48:37 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:48:37 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:48:40 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:48:40 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:48:40 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:48:42 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:48:42 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:48:44 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:48:49 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:48:49 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:48:50 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:48:51 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:48:51 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:48:54 [INFO]: Sprint updated: 6848602c805da42eb7b8e97a
+2025-06-10 23:48:54 [INFO]: Get all projects successfully
+2025-06-10 23:48:54 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:48:54 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:48:56 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:49:00 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:49:00 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:49:00 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:49:05 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:49:05 [INFO]: Found 7 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:49:07 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:49:07 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:49:08 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:49:08 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:49:08 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:49:10 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:49:26 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:49:26 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:49:26 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:49:31 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:51:32 [INFO]: Server is running on http://localhost:5000
+2025-06-10 23:51:33 [INFO]: MongoDB connected successfully
+2025-06-10 23:51:35 [INFO]: Get all projects successfully
+2025-06-10 23:51:35 [INFO]: Get all projects successfully
+2025-06-10 23:51:35 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:52:38 [INFO]: Found 7 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:52:38 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:52:40 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:52:40 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:52:42 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:52:42 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:52:42 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:52:43 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:52:43 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:52:46 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:52:46 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:52:46 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:52:48 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:52:48 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:52:57 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:52:57 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:52:57 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:53:06 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:53:06 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:53:47 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:53:48 [INFO]: Get all projects successfully
+2025-06-10 23:53:48 [INFO]: Get all projects successfully
+2025-06-10 23:53:49 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:53:49 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:53:57 [INFO]: Get all projects successfully
+2025-06-10 23:53:57 [INFO]: Get all projects successfully
+2025-06-10 23:53:57 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:53:58 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:54:36 [INFO]: Get all projects successfully
+2025-06-10 23:54:40 [INFO]: Get all projects successfully
+2025-06-10 23:54:40 [INFO]: Get all projects successfully
+2025-06-10 23:54:40 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:54:40 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:55:50 [INFO]: Server is running on http://localhost:5000
+2025-06-10 23:55:51 [INFO]: MongoDB connected successfully
+2025-06-10 23:55:56 [INFO]: Get all projects successfully
+2025-06-10 23:55:56 [INFO]: Get all projects successfully
+2025-06-10 23:55:56 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:55:56 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:56:06 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:56:36 [INFO]: User with ID 68479bdaa64d6128139a910c updated successfully
+2025-06-10 23:56:42 [INFO]: Get all projects successfully
+2025-06-10 23:56:42 [INFO]: Get all projects successfully
+2025-06-10 23:56:42 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-10 23:56:42 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:05:38 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:05:38 [INFO]: Get all projects successfully
+2025-06-11 00:05:38 [INFO]: Get all projects successfully
+2025-06-11 00:05:38 [INFO]: Lists fetched successfully
+2025-06-11 00:05:38 [INFO]: Task fetched successfully with ID: 68486178289eb5fe307b67af
+2025-06-11 00:09:30 [INFO]: Get all projects successfully
+2025-06-11 00:09:30 [INFO]: Get all projects successfully
+2025-06-11 00:09:31 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:09:31 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:10:15 [INFO]: Get all projects successfully
+2025-06-11 00:10:15 [INFO]: Get all projects successfully
+2025-06-11 00:10:15 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:10:15 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:10:53 [INFO]: Get all projects successfully
+2025-06-11 00:10:54 [INFO]: Get all projects successfully
+2025-06-11 00:10:54 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:10:54 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:11:57 [INFO]: Get all projects successfully
+2025-06-11 00:11:57 [INFO]: Get all projects successfully
+2025-06-11 00:11:57 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:11:57 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:13:21 [INFO]: Get all projects successfully
+2025-06-11 00:13:21 [INFO]: Get all projects successfully
+2025-06-11 00:13:21 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:13:21 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:16:14 [INFO]: Task updated successfully with ID: 68486178289eb5fe307b67af
+2025-06-11 00:16:15 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:16:15 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:16:18 [INFO]: Task updated successfully with ID: 68486178289eb5fe307b67af
+2025-06-11 00:16:18 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:16:18 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:16:28 [INFO]: Task updated successfully with ID: 68486178289eb5fe307b67af
+2025-06-11 00:16:29 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:16:29 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:16:37 [INFO]: Task updated successfully with ID: 68486178289eb5fe307b67af
+2025-06-11 00:16:37 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:16:37 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:16:44 [INFO]: Get all projects successfully
+2025-06-11 00:16:44 [INFO]: Get all projects successfully
+2025-06-11 00:16:44 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:16:44 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:17:38 [INFO]: Task updated successfully with ID: 68486178289eb5fe307b67af
+2025-06-11 00:17:38 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:17:38 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:17:42 [INFO]: Task updated successfully with ID: 68486178289eb5fe307b67af
+2025-06-11 00:17:42 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:17:42 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:18:43 [INFO]: Found 7 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:18:43 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:18:45 [INFO]: Found 3 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:18:49 [INFO]: Found 3 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:18:51 [INFO]: No tasks found for the given project ID
+2025-06-11 00:18:53 [INFO]: No tasks found for the given project ID
+2025-06-11 00:18:55 [INFO]: Found 3 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:18:55 [INFO]: Found 7 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:18:58 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:19:00 [INFO]: Found 7 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:19:02 [INFO]: Found 7 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:19:03 [INFO]: Found 3 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:19:03 [INFO]: Found 3 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:19:05 [INFO]: Found 7 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:19:11 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 00:19:12 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 08:25:35 [INFO]: Task updated successfully with ID: 68486178289eb5fe307b67af
+2025-06-11 08:25:35 [INFO]: Task fetched successfully with ID: 68486178289eb5fe307b67af
+2025-06-11 09:42:43 [INFO]: Server is running on http://localhost:5000
+2025-06-11 09:42:46 [INFO]: MongoDB connected successfully
+2025-06-11 09:45:35 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 09:45:35 [INFO]: Get all projects successfully
+2025-06-11 09:45:35 [INFO]: Lists fetched successfully
+2025-06-11 09:45:35 [INFO]: Task fetched successfully with ID: 68486178289eb5fe307b67af
+2025-06-11 09:45:57 [INFO]: User logged in successfully: {
+  _id: new ObjectId('68479bdaa64d6128139a910c'),
+  firstname: 'estt',
+  lastname: 'estt',
+  email: 'test@gmail.com',
+  location: 'admin@',
+  avatar_url: 'http://res.cloudinary.com/dfakxuy7c/image/upload/v1749574594/pvmhvxjrx7i4iwsowvwz.png',
+  phone: '048888888',
+  isactive: true,
+  username: 'trung',
+  password: '123',
+  createdAt: 2025-06-10T02:43:38.661Z,
+  updatedAt: 2025-06-10T16:56:36.223Z,
+  __v: 0
+}
+2025-06-11 09:45:57 [INFO]: Get all projects successfully
+2025-06-11 09:46:04 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 09:46:07 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 09:46:08 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 09:46:31 [INFO]: Task updated successfully with ID: 68486178289eb5fe307b67af
+2025-06-11 09:46:32 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 09:46:32 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 09:53:45 [INFO]: Found 7 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 09:53:46 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 09:53:47 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 09:53:47 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 09:54:16 [INFO]: Task updated successfully with ID: 68486178289eb5fe307b67af
+2025-06-11 09:54:17 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 09:54:17 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:11:50 [INFO]: Task updated successfully with ID: 68486178289eb5fe307b67af
+2025-06-11 10:11:51 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:11:51 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:12:13 [INFO]: Task updated successfully with ID: 68486178289eb5fe307b67af
+2025-06-11 10:12:14 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:12:14 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:12:18 [INFO]: Task updated successfully with ID: 68486178289eb5fe307b67af
+2025-06-11 10:12:19 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:12:19 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:12:29 [INFO]: Task updated successfully with ID: 68486178289eb5fe307b67af
+2025-06-11 10:12:30 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:12:30 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:12:43 [INFO]: Get all projects successfully
+2025-06-11 10:12:43 [INFO]: Get all projects successfully
+2025-06-11 10:12:43 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:12:43 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:15:58 [INFO]: Task updated successfully with ID: 68486178289eb5fe307b67af
+2025-06-11 10:15:59 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:15:59 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:16:37 [INFO]: Task created successfully with ID: 6848f5153d03fb5ac45a9a8e
+2025-06-11 10:16:37 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:16:37 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:16:44 [INFO]: Found 1 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:16:44 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:16:44 [INFO]: Found 2 tasks for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:16:46 [INFO]: Found 1 tasks for sprint ID: 6848602c805da42eb7b8e97a
+2025-06-11 10:16:48 [INFO]: Found 1 tasks for sprint ID: 68486035805da42eb7b8e97c
+2025-06-11 10:16:53 [INFO]: Found 1 tasks for sprint ID: 68485f574ab75cbb48c448a6
+2025-06-11 10:16:54 [INFO]: Found 1 tasks for sprint ID: 6848602c805da42eb7b8e97a
+2025-06-11 10:16:56 [INFO]: Found 1 tasks for sprint ID: 68486035805da42eb7b8e97c
+2025-06-11 10:17:01 [INFO]: Found 1 tasks for sprint ID: 6848602c805da42eb7b8e97a
+2025-06-11 10:17:04 [INFO]: Found 1 tasks for sprint ID: 68486035805da42eb7b8e97c
+2025-06-11 10:17:36 [INFO]: Server is running on http://localhost:5000
+2025-06-11 10:17:37 [INFO]: MongoDB connected successfully
+2025-06-11 10:17:40 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:17:41 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:17:56 [INFO]: Task created successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 10:17:57 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:17:57 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:18:40 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 10:18:41 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:18:41 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:19:23 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 10:19:23 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:19:23 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:22:14 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:22:14 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:31:23 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 10:31:23 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:31:23 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:31:27 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 10:31:27 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:31:27 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:33:31 [INFO]: Get all projects successfully
+2025-06-11 10:33:31 [INFO]: Get all projects successfully
+2025-06-11 10:33:31 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:33:31 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:35:57 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 10:35:57 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:35:57 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:35:59 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 10:36:00 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:36:00 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:36:06 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 10:36:06 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:36:07 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:36:14 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 10:36:15 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:36:15 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 10:55:00 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 10:55:22 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 10:57:51 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 10:58:57 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 10:59:07 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 10:59:19 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:00:16 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:00:18 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:00:31 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:00:46 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:00:47 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:00:49 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:00:59 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:01:02 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:13:05 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:13:10 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:16:48 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:17:57 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:17:59 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:18:03 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:18:06 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:18:28 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:18:30 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:18:31 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:19:25 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:19:27 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:19:30 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:19:31 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:20:32 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:20:33 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:20:34 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:20:36 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:20:37 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:20:48 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:20:53 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:20:56 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:20:58 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:20:59 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:21:00 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:23:48 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:23:51 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:30:04 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:30:55 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:31:14 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:31:20 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:31:22 [INFO]: Task updated successfully with ID: 6848f5642f899b5a15c40874
+2025-06-11 11:41:00 [INFO]: User logged in successfully: {
+  _id: new ObjectId('68479bdaa64d6128139a910c'),
+  firstname: 'estt',
+  lastname: 'estt',
+  email: 'test@gmail.com',
+  location: 'admin@',
+  avatar_url: 'http://res.cloudinary.com/dfakxuy7c/image/upload/v1749574594/pvmhvxjrx7i4iwsowvwz.png',
+  phone: '048888888',
+  isactive: true,
+  username: 'trung',
+  password: '123',
+  createdAt: 2025-06-10T02:43:38.661Z,
+  updatedAt: 2025-06-10T16:56:36.223Z,
+  __v: 0
+}
+2025-06-11 11:41:00 [INFO]: Get all projects successfully
+2025-06-11 11:41:01 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 11:41:01 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 16:03:35 [INFO]: User logged in successfully: {
+  _id: new ObjectId('68479bdaa64d6128139a910c'),
+  firstname: 'estt',
+  lastname: 'estt',
+  email: 'test@gmail.com',
+  location: 'admin@',
+  avatar_url: 'http://res.cloudinary.com/dfakxuy7c/image/upload/v1749574594/pvmhvxjrx7i4iwsowvwz.png',
+  phone: '048888888',
+  isactive: true,
+  username: 'trung',
+  password: '123',
+  createdAt: 2025-06-10T02:43:38.661Z,
+  updatedAt: 2025-06-10T16:56:36.223Z,
+  __v: 0
+}
+2025-06-11 16:03:35 [INFO]: Get all projects successfully
+2025-06-11 16:03:35 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 16:03:35 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 16:04:41 [INFO]: Get all projects successfully
+2025-06-11 16:04:41 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd
+2025-06-11 16:04:42 [INFO]: Members retrieved successfully for project ID: 6847ac29f21377e4815eb5dd

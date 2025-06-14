@@ -167,3 +167,30 @@ Use mongoose.model(name, schema)
 2025-02-10 17:40:11 [ERROR]: Error retrieving tasks by project ID: Cast to ObjectId failed for value "undefined" (type string) at path "projectId" for model "List"
 2025-02-10 17:40:11 [ERROR]: Error retrieving members by project ID: Cast to ObjectId failed for value "undefined" (type string) at path "projectId" for model "Member"
 2025-02-10 23:08:34 [ERROR]: Error fetching notifications: Notification.find(...).populate(...).exec(...).sort is not a function
+2025-02-19 12:37:35 [ERROR]: Get projects error: Operation `members.find()` buffering timed out after 10000ms
+2025-02-19 12:37:53 [ERROR]: MongoDB connection error: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2025-02-19 12:51:36 [ERROR]: MongoDB connection error: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2025-02-19 12:55:07 [ERROR]: MongoDB connection error: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2025-02-19 14:13:03 [ERROR]: MongoDB connection error: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2025-05-12 16:54:28 [ERROR]: MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.project.vthg7.mongodb.net
+2025-05-12 16:56:48 [ERROR]: MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.project.vthg7.mongodb.net
+2025-05-12 16:56:56 [ERROR]: Get projects error: Operation `members.find()` buffering timed out after 10000ms
+2025-05-12 16:56:57 [ERROR]: Get projects error: Operation `members.find()` buffering timed out after 10000ms
+2025-05-12 16:58:29 [ERROR]: Login error: Operation `users.findOne()` buffering timed out after 10000ms
+2025-06-10 09:25:52 [ERROR]: MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.project.vthg7.mongodb.net
+2025-06-10 09:38:30 [ERROR]: MongoDB connection error: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2025-06-10 10:17:14 [ERROR]: Error occurred: Expected ',' or '}' after property value in JSON at position 26 (line 3 column 3)
+2025-06-10 10:17:42 [ERROR]: Error occurred: Expected ',' or '}' after property value in JSON at position 26 (line 3 column 3)
+2025-06-10 10:17:58 [ERROR]: Error occurred: Expected ',' or '}' after property value in JSON at position 26 (line 3 column 3)
+2025-06-10 10:25:55 [ERROR]: Create project error: Model.find() no longer accepts a callback
+2025-06-10 10:46:51 [ERROR]: Create project error: Cannot read properties of null (reading '_id')
+2025-06-10 10:47:56 [ERROR]: Create project error: Project validation failed: name: Path `name` is required., description: Path `description` is required., created_by: Path `created_by` is required.
+2025-06-10 10:48:15 [ERROR]: Create project error: Project validation failed: name: Path `name` is required., description: Path `description` is required., created_by: Path `created_by` is required.
+2025-06-10 10:48:29 [ERROR]: Create project error: Cannot read properties of null (reading '_id')
+2025-06-10 17:42:08 [ERROR]: Get project by ID error: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Project"
+2025-06-10 17:42:10 [ERROR]: Get project by ID error: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Project"
+2025-06-10 17:42:10 [ERROR]: Error retrieving tasks by project ID: Cast to ObjectId failed for value "undefined" (type string) at path "projectId" for model "List"
+2025-06-10 17:42:10 [ERROR]: Error retrieving members by project ID: Cast to ObjectId failed for value "undefined" (type string) at path "projectId" for model "Member"
+2025-06-10 17:42:10 [ERROR]: Error retrieving tasks by project ID: Cast to ObjectId failed for value "undefined" (type string) at path "projectId" for model "List"
+2025-06-10 17:42:10 [ERROR]: Error fetching sprints: Cast to ObjectId failed for value "undefined" (type string) at path "projectId" for model "Sprint"
+2025-06-10 19:22:24 [ERROR]: Error creating task: Task validation failed: assignee: Cast to ObjectId failed for value "" (type string) at path "assignee" because of "BSONError"
