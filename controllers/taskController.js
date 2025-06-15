@@ -128,17 +128,24 @@ exports.getTaskById = async (req, res) => {
 
 // Update Task
 exports.updateTask = async (req, res) => {
-    try {
-        const updatedTask = await Task.findByIdAndUpdate(req.params.id, req.body, { new: true });
-        if (!updatedTask) {
-            logger.info('Task not found for update');
-            return sendResponse(res, 'Task not found', 404);
+   try {
+        const { listId, ...rest } = req.body;
+        const taskId = req.params.id;
+
+        const task = await Task.findById(taskId);
+        if (!task) return sendResponse(res, 'Task not found', 404);
+
+        if (listId && listId !== String(task.listId)) {
+            await Promise.all([
+                List.findByIdAndUpdate(task.listId, { $pull: { tasks: taskId } }),
+                List.findByIdAndUpdate(listId, { $push: { tasks: taskId } })
+            ]);
         }
-        logger.info(`Task updated successfully with ID: ${updatedTask._id}`);
-        return sendResponse(res, 'Task updated successfully', 200, updatedTask);
-    } catch (error) {
-        logger.error(`Error updating task: ${error.message}`);
-        return sendResponse(res, 'Failed to update task', 500, { error: error.message });
+
+        const updatedTask = await Task.findByIdAndUpdate(taskId, { ...rest, listId }, { new: true });
+        return sendResponse(res, 'Task updated', 200, updatedTask);
+    } catch (err) {
+        return sendResponse(res, 'Update failed', 500, { error: err.message });
     }
 };
 
