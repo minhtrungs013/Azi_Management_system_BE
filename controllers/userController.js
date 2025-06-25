@@ -77,7 +77,7 @@ exports.updateUser = async (req, res) => {
         logger.info(`User with ID ${req.params.id} updated successfully`);
         
         // Trả về dữ liệu người dùng đã cập nhật
-        return sendResponse(res, 'User updated successfully', 200, null);
+        return sendResponse(res, 'User updated successfully', 200, updatedUser);
     } catch (error) {
         // Log lỗi và trả về thông báo lỗi
         logger.error(`Update user failed: ${error.message}`);
