@@ -12,6 +12,7 @@ router.get('/backlog/:projectId', taskController.getTasksOnBacklog);
 router.put('/:id', taskController.updateTask);
 router.put('/:taskId/lists/:targetListId', taskController.moveTask);
 router.put('/moveToBacklog/:taskId', taskController.moveTaskToBacklog);
+router.put('/:id/addTaskToSprint/:sprintId', taskController.addTaskToSprint);
 router.delete('/:id', taskController.deleteTask);
 
 module.exports = router;

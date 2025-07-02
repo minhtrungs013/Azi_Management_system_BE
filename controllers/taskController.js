@@ -128,7 +128,7 @@ exports.getTaskById = async (req, res) => {
 
 // Update Task
 exports.updateTask = async (req, res) => {
-   try {
+    try {
         const { listId, ...rest } = req.body;
         const taskId = req.params.id;
 
@@ -203,12 +203,41 @@ exports.moveTask = async (req, res) => {
 };
 
 // move  Task
+exports.addTaskToSprint = async (req, res) => {
+    try {
+        const { id, sprintId } = req.params;
+
+        // Kiểm tra dữ liệu đầu vào
+        if (!id) {
+            return res.status(400).json({ error: 'Task ID and target List ID are required' });
+        }
+        // Tìm task cần di chuyển
+        const task = await Task.findById(id);
+
+        if (!task) {
+            return res.status(404).json({ error: 'Task not found' });
+        }
+
+        task.sprintId = sprintId;
+        task.isBacklog = false;
+        // Lưu task đã được cập nhật
+        await task.save();
+
+
+        // Gửi phản hồi
+        return sendResponse(res, 'Move Task successfully', 200, null);
+
+    } catch (error) {
+        logger.error(`Error moving task: ${error.message}`);
+        return res.status(500).json({ error: 'Failed to move task' });
+    }
+};
 exports.moveTaskToBacklog = async (req, res) => {
     try {
         const { taskId } = req.params;
 
         // Kiểm tra dữ liệu đầu vào
-        if (!taskId ) {
+        if (!taskId) {
             return res.status(400).json({ error: 'Task ID and target List ID are required' });
         }
 
@@ -219,15 +248,15 @@ exports.moveTaskToBacklog = async (req, res) => {
             return res.status(404).json({ error: 'Task not found' });
         }
 
-        task.isBacklog = true; 
+        task.isBacklog = true;
         task.sprintId = null;
 
-        const currentList = await List.findById( task.listId );
+        const currentList = await List.findById(task.listId);
 
-        const targetList = await List.findOne({name: 'TO DO', projectId: currentList.projectId });
+        const targetList = await List.findOne({ name: 'TO DO', projectId: currentList.projectId });
 
-        if(!targetList || !currentList) {
-             return sendResponse(res, 'No lists found for the given project ID', 404);
+        if (!targetList || !currentList) {
+            return sendResponse(res, 'No lists found for the given project ID', 404);
         }
 
         task.listId = targetList.id;
@@ -369,7 +398,7 @@ exports.getTasksBySprintId = async (req, res) => {
             .sort({ startDate: 1 });
 
         const sprint = await Sprint.findById(sprintId);
-        
+
         if (!sprint) {
             logger.info('No sprint found for the given project ID');
             return sendResponse(res, 'No lists found for the given project ID', 404);
